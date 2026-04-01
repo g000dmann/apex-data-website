@@ -17,7 +17,7 @@ const translations = {
         placeholder_location: "Location",
         placeholder_email: "Email",
         button_request: "Request Custom Data Batch",
-        limited_capacity: "Limited capacity for Q2 2026. US-Agencies only.",
+        limited_capacity: "Limited capacity for Q2 2026. Global availability.",
         footer_links: "GLOBAL // INTERNATIONAL // APEX"
     },
     de: {
