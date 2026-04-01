@@ -8,6 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+        }
+        .lang-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            border-color: #00ff88;
+            color: #00ff88;
+        }
+        .lang-btn.active {
+            background: #00ff88;
+            color: #000;
+            border-color: #00ff88;
+        }
+    </style>
 </head>
 <body>
     <div class="glow-container">
@@ -15,32 +42,39 @@
     </div>
     
     <nav>
-        <div class="logo">APEX DATA // <span>ENGINEERING</span></div>
-        <div class="status-badge"><span class="pulse"></span> SYSTEM OPERATIONAL</div>
+        <div class="logo">APEX DATA // <span data-i18n="logo_engineering">ENGINEERING</span></div>
+        <div style="display: flex; align-items: center;">
+            <div class="lang-switch">
+                <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+                <button onclick="setLanguage('de')" class="lang-btn">DE</button>
+            </div>
+            <div class="status-badge"><span class="pulse"></span> <span data-i18n="system_status">SYSTEM OPERATIONAL</span></div>
+        </div>
     </nav>
 
     <main>
         <header>
-            <h1>Apex Data Engineering for <span class="gradient-text">Global B2B Growth.</span></h1>
-            <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// GDPR & CCPA COMPLIANT B2B DATA ENGINEERING</p>
-            <p class="subtitle">We identify what others miss. Our autonomous engine scans the global web to transform technical vulnerabilities into high-ticket sales opportunities.</p>
+            <h1 data-i18n="h1_part1">Apex Data Engineering for <span class="gradient-text" data-i18n="h1_gradient">Global B2B Growth.</span></h1>
+            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// GDPR & CCPA COMPLIANT B2B DATA ENGINEERING</p>
+            <p data-i18n="subtitle" class="subtitle">We identify what others miss. Our autonomous engine scans the global web to transform technical vulnerabilities into high-ticket sales opportunities.</p>
         </header>
 
         <section class="features">
             <div class="feature-card">
                 <div class="icon">01</div>
-                <h3>Autonomous Web Infiltration</h3>
-                <p>Our proprietary engine bypasses standard barriers to extract deep metadata from any domain worldwide, bypassing residential blocks and firewalls.</p>
+                <h3 data-i18n="feature1_title">Autonomous Web Infiltration</h3>
+                <p data-i18n="feature1_desc">Our proprietary engine bypasses standard barriers to extract deep metadata from any domain worldwide, bypassing residential blocks and firewalls.</p>
             </div>
             <div class="feature-card">
                 <div class="icon">02</div>
-                <h3>Universal AI Inference</h3>
-                <p>Powered by advanced machine learning algorithms, we analyze tech-stacks, mobile performance, and conversion gaps to identify $1,000+ lead assets in real-time.</p>
+                <h3 data-i18n="feature2_title">Universal AI Inference</h3>
+                <p data-i18n="feature2_desc">Powered by advanced machine learning algorithms, we analyze tech-stacks, mobile performance, and conversion gaps to identify $1,000+ lead assets in real-time.</p>
             </div>
             <div class="feature-card">
                 <div class="icon">03</div>
-                <h3>Precision Sniper Hooks</h3>
-                <p>We don't send emails; we deliver technical evidence. Every data point is paired with a hyper-personalized hook that forces engagement.</p>
+                <div class="icon">03</div>
+                <h3 data-i18n="feature3_title">Precision Sniper Hooks</h3>
+                <p data-i18n="feature3_desc">We don't send emails; we deliver technical evidence. Every data point is paired with a hyper-personalized hook that forces engagement.</p>
             </div>
         </section>
 
@@ -48,25 +82,26 @@
             <div class="form-container">
                 <form action="https://apex-data.werbesolutions.casa/webhook/inbound-lead" method="POST">
                     <div class="input-group">
-                        <input type="text" name="agencyName" placeholder="Agency Name" required>
-                        <input type="text" name="targetNiche" placeholder="Target Niche" required>
+                        <input data-i18n="placeholder_agency" type="text" name="agencyName" placeholder="Agency Name" required>
+                        <input data-i18n="placeholder_niche" type="text" name="targetNiche" placeholder="Target Niche" required>
                     </div>
                     <div class="input-group">
-                        <input type="text" name="location" placeholder="Location" required>
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input data-i18n="placeholder_location" type="text" name="location" placeholder="Location" required>
+                        <input data-i18n="placeholder_email" type="email" name="email" placeholder="Email" required>
                     </div>
-                    <button type="submit" class="cta-button">Request Custom Data Batch</button>
+                    <button data-i18n="button_request" type="submit" class="cta-button">Request Custom Data Batch</button>
                 </form>
             </div>
-            <p class="cta-sub">Limited capacity for Q2 2026. US-Agencies only.</p>
+            <p data-i18n="limited_capacity" class="cta-sub">Limited capacity for Q2 2026. US-Agencies only.</p>
         </div>
     </main>
 
     <footer>
         <div class="footer-grid">
             <div class="footer-info">© 2026 Apex Data Engineering | <a href="terms.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.2);">Terms</a> | <a href="privacy.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.2);">Privacy</a></div>
-            <div class="footer-links">GLOBAL // INTERNATIONAL // APEX</div>
+            <div data-i18n="footer_links" class="footer-links">GLOBAL // INTERNATIONAL // APEX</div>
         </div>
     </footer>
+    <script src="i18n.js"></script>
 </body>
 </html>
