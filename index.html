@@ -35,6 +35,77 @@
             border-color: #00ff88;
         }
     </style>
+
+    <style>
+        /* Cookie Banner - Dark Glass Look (Apex Data Style) */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 15, 20, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(0, 255, 136, 0.3);
+            padding: 24px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Inter', 'JetBrains Mono', monospace;
+            box-sizing: border-box;
+            z-index: 9999;
+            box-shadow: 0 -4px 20px rgba(0, 255, 136, 0.1);
+        }
+        #cookie-banner.hidden {
+            display: none;
+        }
+        #cookie-banner .content {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        #cookie-banner .text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 13px;
+            line-height: 1.6;
+            flex: 1;
+            min-width: 300px;
+        }
+        #cookie-banner .text strong {
+            color: #00ff88;
+        }
+        #cookie-banner .accept-btn {
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+            color: #000;
+            border: none;
+            padding: 14px 32px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
+            min-width: 140px;
+        }
+        #cookie-banner .accept-btn:hover {
+            background: linear-gradient(135deg, #00ff88 0%, #00ff88 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 255, 136, 0.6);
+        }
+        #cookie-banner .accept-btn:active {
+            transform: translateY(0);
+        }
+        #cookie-banner .icon {
+            color: #00ff88;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <div class="glow-container">
@@ -91,7 +162,7 @@
                     <button data-i18n="button_request" type="submit" class="cta-button">Request Custom Data Batch</button>
                 </form>
             </div>
-            <p data-i18n="limited_capacity" class="cta-sub">Limited capacity for Q2 2026. Global availability.</p>
+            <p class="cta-sub">Limited capacity for Q2 2026. Global availability.</p>
         </div>
     </main>
 
@@ -101,6 +172,50 @@
             <div data-i18n="footer_links" class="footer-links">GLOBAL // INTERNATIONAL // APEX</div>
         </div>
     </footer>
+    <!-- Cookie Banner - Dark Glass Look -->
+    <div id="cookie-banner" class="hidden" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1">
+        <div class="content">
+            <span class="icon">⚡</span>
+            <div class="text">
+                <strong data-i18n="cookie_title">Datenschutz &amp; Cookies</strong>
+                <br>
+                Wir verwenden Cookies, um unser <strong data-i18n="cookie_desc1">autonomes Data-Engineering</strong> zu betreiben und Sie <strong data-i18n="cookie_desc2">globale Opportunities</strong> zu informieren.
+                <br>
+                Akzeptieren Sie unsere <strong data-i18n="cookie_desc3">Datenpraxis</strong>?
+            </div>
+            <button onclick="acceptCookies()" class="accept-btn" aria-label="<span data-i18n="cookie_accept">Akzeptieren</span>">
+                <span data-i18n="cookie_accept">Akzeptieren</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        <!-- Cookie Banner JS - Accept Button Logic -->
+        window.addEventListener('DOMContentLoaded', function() {
+            // Check if cookies were already accepted
+            if (!localStorage.getItem('apex_data_cookie_consent')) {
+                document.getElementById('cookie-banner').classList.remove('hidden');
+            }
+        });
+
+        function acceptCookies() {
+            // Set consent cookie for 365 days
+            const consent = {
+                consent: true,
+                consentDate: new Date().toISOString(),
+                consentIP: 'auto-detected',
+                consentBrowser: navigator.userAgent
+            };
+            localStorage.setItem('apex_data_cookie_consent', JSON.stringify(consent));
+            
+            // Hide banner
+            const banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.classList.add('hidden');
+            }
+        }
+    </script>
+
     <script src="i18n.js"></script>
 </body>
 </html>
