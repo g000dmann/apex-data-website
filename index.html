@@ -1,324 +1,181 @@
 <!DOCTYPE html>
-<html lang="de">
-    <base target="_self">
-    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'"> <link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"> <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Data Engineering - Forensic B2B Data Engineering & AI Inference // GDPR Compliant</title>
-    <meta name="description" content="Apex Data Engineering: Autonomous AI-driven forensic data engineering for global B2B growth. We extract deep metadata, analyze tech-stacks, and deliver high-ticket opportunities for agencies worldwide. GDPR & CCPA compliant.">
-    <meta name="keywords" content="data engineering, forensic data analysis, B2B growth, AI inference, web data extraction, GDPR compliant, autonomous data engineering, global B2B, apex data, metadata extraction, tech-stack analysis, lead generation, web scraping, data pipeline, AI automation">
+    <title>Apex Data Engineering - Premium B2B Lead Intelligence // GDPR & CCPA Compliant</title>
+    <meta name="description" content="Apex Data Engineering provides meticulously curated B2B lead lists and actionable business intelligence for agencies and enterprises. Get direct access to verified decision-makers.">
+    <meta name="keywords" content="B2B leads, lead generation, business intelligence, decision makers, sales growth, apex data">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://apex-data.werbesolutions.casa/">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://apex-data.werbesolutions.at/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="author" content="Apex Data Engineering">
-    <meta name="geo.region" content="DE">
-    <meta name="geo.placename" content="Global">
-    <meta property="og:title" content="Apex Data Engineering - Forensic B2B Data Engineering & AI Inference">
-    <meta property="og:description" content="Autonomous AI-driven forensic data engineering for global B2B growth. GDPR & CCPA compliant.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://apex-data.werbesolutions.casa/">
-    <meta property="og:site_name" content="Apex Data Engineering">
-    <meta property="og:locale" content="de_DE">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Apex Data Engineering - Forensic B2B Data Engineering">
-    <meta name="twitter:description" content="Autonomous AI-driven forensic data engineering for global B2B growth.">
     <style>
-        .lang-switch {
-            display: flex;
-            gap: 10px;
-            margin-right: 20px;
+        /* Base Styles (Inlined for simplicity, keep your external styles.css if preferred) */
+        body {
+            margin: 0;
+            background-color: #0a0f14;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
         }
-        .lang-btn {
-            background: transparent;
-            border: 1px solid rgba(255,255,255,0.2);
-            color: #fff;
-            padding: 4px 8px;
-            cursor: pointer;
-            font-size: 10px;
-            font-family: 'JetBrains Mono', monospace;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-        .lang-btn:hover {
-            border-color: #00ff88;
-            color: #00ff88;
-        }
-        .lang-btn.active {
-            background: #00ff88;
-            color: #000;
-            border-color: #00ff88;
-        }
-                }
-    </style>
+        .glow-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden; pointer-events: none; }
+        .glow { position: absolute; top: -20%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(0,255,136,0.05) 0%, rgba(0,0,0,0) 70%); }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.5px; }
+        .logo span { color: #00ff88; }
+        .status-badge { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: rgba(0,255,136,0.1); color: #00ff88; padding: 6px 12px; border-radius: 4px; display: flex; align-items: center; gap: 8px; }
+        .pulse { width: 6px; height: 6px; background-color: #00ff88; border-radius: 50%; box-shadow: 0 0 8px #00ff88; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
 
-    <style>
-        /* Cookie Banner - Dark Glass Look (Apex Data Style) */
-        #cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(10, 15, 20, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(0, 255, 136, 0.3);
-            padding: 24px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            font-family: 'Inter', 'JetBrains Mono', monospace;
-            box-sizing: border-box;
-            z-index: 9999;
-            box-shadow: 0 -4px 20px rgba(0, 255, 136, 0.1);
-        }
-        #cookie-banner.hidden {
-            display: none;
-        }
-        #cookie-banner .content {
-            max-width: 1200px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        #cookie-banner .text {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 13px;
-            line-height: 1.6;
-            flex: 1;
-            min-width: 300px;
-        }
-        #cookie-banner .text strong {
-            color: #00ff88;
-        }
-        #cookie-banner .reject-btn {
-            background: rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.6);
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 14px 28px;
-            font-size: 14px;
-            font-weight: 500;
-            font-family: 'JetBrains Mono', monospace;
-            cursor: pointer;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            min-width: 100px;
-        }
-        #cookie-banner .reject-btn:hover {
-            background: rgba(255,255,255,0.15);
-            border-color: rgba(255,255,255,0.3);
-            color: rgba(255,255,255,0.9);
-        }
-        #cookie-banner .accept-btn {
-            background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
-            color: #000;
-            border: none;
-            padding: 14px 32px;
-            font-size: 14px;
-            font-weight: 600;
-            font-family: 'JetBrains Mono', monospace;
-            cursor: pointer;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
-            min-width: 140px;
-        }
-        #cookie-banner .accept-btn:hover {
-            background: linear-gradient(135deg, #00ff88 0%, #00ff88 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 255, 136, 0.6);
-        }
-        #cookie-banner .accept-btn:active {
-            transform: translateY(0);
-        }
-        #cookie-banner .icon {
-            color: #00ff88;
-            font-size: 14px;
-        }
+        .lang-switch { display: flex; gap: 10px; margin-right: 20px; }
+        .lang-btn { background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 4px 8px; cursor: pointer; font-size: 10px; font-family: 'JetBrains Mono', monospace; border-radius: 4px; transition: all 0.3s; }
+        .lang-btn:hover { border-color: #00ff88; color: #00ff88; }
+        .lang-btn.active { background: #00ff88; color: #000; border-color: #00ff88; }
+
+        header { text-align: center; padding: 120px 20px 80px; max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1.5px; }
+        .gradient-text { background: linear-gradient(135deg, #fff 0%, #00ff88 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.6); line-height: 1.6; max-width: 700px; margin: 0 auto; }
+
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 40px; max-width: 1200px; margin: 0 auto; }
+        .feature-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 40px; border-radius: 8px; transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); border-color: rgba(0,255,136,0.3); }
+        .feature-card .icon { font-family: 'JetBrains Mono', monospace; font-size: 2rem; color: #00ff88; margin-bottom: 20px; font-weight: 700; opacity: 0.5; }
+        .feature-card h3 { font-size: 1.3rem; margin-bottom: 15px; }
+        .feature-card p { color: rgba(255,255,255,0.6); line-height: 1.6; font-size: 0.95rem; }
+
+        .cta-section { text-align: center; padding: 100px 20px; background: linear-gradient(0deg, rgba(0,255,136,0.05) 0%, rgba(10,15,20,1) 100%); }
+        .form-container { max-width: 600px; margin: 0 auto; background: rgba(0,0,0,0.4); padding: 40px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .input-group { display: flex; gap: 15px; margin-bottom: 15px; }
+        input { flex: 1; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 6px; font-family: 'Inter', sans-serif; }
+        input:focus { outline: none; border-color: #00ff88; }
+        .cta-button { width: 100%; padding: 18px; background: #00ff88; color: #000; border: none; font-weight: 800; font-size: 1.1rem; border-radius: 6px; cursor: pointer; transition: all 0.3s; margin-top: 10px; }
+        .cta-button:hover { background: #00cc6a; transform: translateY(-2px); }
+        .cta-sub { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 20px; font-family: 'JetBrains Mono', monospace; }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 50px; }
+        .footer-info { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 10px; }
+        
+        /* Cookie Banner */
+        #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(10, 15, 20, 0.95); backdrop-filter: blur(20px); border-top: 1px solid rgba(0, 255, 136, 0.3); padding: 24px 40px; display: flex; align-items: center; justify-content: center; z-index: 9999; }
+        #cookie-banner.hidden { display: none; }
+        #cookie-banner .content { max-width: 1200px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        #cookie-banner .text { color: rgba(255, 255, 255, 0.8); font-size: 13px; line-height: 1.6; flex: 1; min-width: 300px; }
+        #cookie-banner .text strong { color: #00ff88; }
+        #cookie-banner .btn-group { display: flex; gap: 12px; align-items: center; }
+        #cookie-banner .reject-btn { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.2); padding: 14px 28px; font-size: 14px; cursor: pointer; border-radius: 6px; }
+        #cookie-banner .accept-btn { background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%); color: #000; border: none; padding: 14px 32px; font-size: 14px; font-weight: 600; cursor: pointer; border-radius: 6px; }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Zum Inhalt springen</a>
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+    
     <div class="glow-container">
         <div class="glow"></div>
     </div>
     
     <nav aria-label="Navigation">
-        <div class="logo">APEX DATA // <span data-i18n="logo_engineering">ENGINEERING</span></div>
+        <div class="logo">APEX DATA // <span data-i18n="logo_engineering">INTELLIGENCE</span></div>
         <div style="display: flex; align-items: center;">
             <div class="lang-switch">
-                <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+                <button onclick="setLanguage('en')" class="lang-btn active">EN</button>
                 <button onclick="setLanguage('de')" class="lang-btn">DE</button>
             </div>
-            <div class="status-badge"><span class="pulse"></span> <span data-i18n="system_status">SYSTEM OPERATIONAL</span></div>
+            <div class="status-badge"><span class="pulse"></span> <span data-i18n="system_status">DATA READY</span></div>
         </div>
-
     </nav>
-    
 
     <main id="main-content">
         <header>
-            <h1 data-i18n="h1_part1">Apex Data Engineering for <span class="gradient-text" data-i18n="h1_gradient">Global B2B Growth.</span></h1>
-            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// GDPR & CCPA COMPLIANT B2B DATA ENGINEERING</p>
-            <p data-i18n="subtitle" class="subtitle">We identify what others miss. Our autonomous engine scans the global web to transform technical vulnerabilities into high-ticket sales opportunities.</p>
+            <h1 data-i18n="h1_part1">Premium Intelligence for <span class="gradient-text" data-i18n="h1_gradient">High-Ticket Sales.</span></h1>
+            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// EXCLUSIVE B2B LEAD OPPORTUNITIES</p>
+            <p data-i18n="subtitle" class="subtitle">Stop wasting time on outdated lists. We provide your sales team with verified decision-makers, comprehensive business profiles, and the exact pain points you need to close the deal.</p>
         </header>
 
         <section class="features">
             <div class="feature-card">
                 <div class="icon">01</div>
-                <h3 data-i18n="feature1_title">Autonomous Web Infiltration</h3>
-                <p data-i18n="feature1_desc">Our proprietary engine bypasses standard barriers to extract deep metadata from any domain worldwide, bypassing residential blocks and firewalls.</p>
+                <h3 data-i18n="feature1_title">Verified Decision Makers</h3>
+                <p data-i18n="feature1_desc">Gain direct access to CEOs, founders, and key stakeholders. Every contact is cross-referenced to ensure your pitch reaches the person holding the budget.</p>
             </div>
             <div class="feature-card">
                 <div class="icon">02</div>
-                <h3 data-i18n="feature2_title">Universal AI Inference</h3>
-                <p data-i18n="feature2_desc">Powered by advanced machine learning algorithms, we analyze tech-stacks, mobile performance, and conversion gaps to identify $1,000+ lead assets in real-time.</p>
+                <h3 data-i18n="feature2_title">Deep Business Insights</h3>
+                <p data-i18n="feature2_desc">Don't go in cold. We provide rich profiles including company size, operational focus, and digital infrastructure so you understand their business before the first call.</p>
             </div>
             <div class="feature-card">
                 <div class="icon">03</div>
-                <h3 data-i18n="feature3_title">Precision Sniper Hooks</h3>
-                <p data-i18n="feature3_desc">We don't send emails; we deliver technical evidence. Every data point is paired with a hyper-personalized hook that forces engagement.</p>
+                <h3 data-i18n="feature3_title">Ready-to-Pitch Data</h3>
+                <p data-i18n="feature3_desc">We deliver the exact angles that convert. From compliance risks to missed market opportunities, our data gives your sales team the ultimate unfair advantage.</p>
             </div>
         </section>
 
         <div class="cta-section">
             <div class="form-container">
-                <form action="https://apex-data.werbesolutions.casa/webhook/inbound-lead" method="POST">
+                <form action="https://apex-data.werbesolutions.at/webhook/inbound-lead" method="POST">
                     <div class="input-group">
-                        <input data-i18n="placeholder_agency" type="text" name="agencyName" placeholder="Agency Name" required>
-                        <input data-i18n="placeholder_niche" type="text" name="targetNiche" placeholder="Target Niche" required>
+                        <input data-i18n="placeholder_agency" type="text" name="companyName" placeholder="Your Company Name" required>
+                        <input data-i18n="placeholder_niche" type="text" name="targetNiche" placeholder="Desired Target Niche (e.g. Roofing)" required>
                     </div>
                     <div class="input-group">
-                        <input data-i18n="placeholder_location" type="text" name="location" placeholder="Location" required>
-                        <input data-i18n="placeholder_email" type="email" name="email" placeholder="Email" required>
+                        <input data-i18n="placeholder_location" type="text" name="location" placeholder="Target US State / City" required>
+                        <input data-i18n="placeholder_email" type="email" name="email" placeholder="Your Business Email" required>
                     </div>
-                    <button data-i18n="button_request" type="submit" class="cta-button">Request Custom Data Batch</button>
+                    <button data-i18n="button_request" type="submit" class="cta-button">Request Premium Lead Batch</button>
                 </form>
             </div>
-            <p class="cta-sub">Limited capacity for Q2 2026. Global availability.</p>
+            <p class="cta-sub">Strict capacity limits apply. Prioritizing long-term data partnerships.</p>
         </div>
     </main>
 
     <footer aria-label="Footer">
         <div class="footer-grid">
-            <div class="footer-info">© 2026 Apex Data Engineering // Start-Up Phase | <a href="terms.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.2);">Terms</a> | <a href="privacy.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.2);">Privacy</a></div>
-            <div style="font-size: 10px; color: rgba(255,255,255,0.4); font-family: 'JetBrains Mono', monospace;">// Building the Future of Forensic Data Engineering</div>
+            <div class="footer-info">© 2026 Apex Data Engineering | <a href="terms.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.2);">Terms</a> | <a href="privacy.html" style="color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.2);">Privacy</a></div>
+            <div style="font-size: 10px; color: rgba(255,255,255,0.4); font-family: 'JetBrains Mono', monospace;">// Fueling Market Leaders with Precision Data</div>
         </div>
     </footer>
-    <!-- Cookie Banner - Dark Glass Look -->
-    <div id="cookie-banner" class="hidden" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1">
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="hidden" role="dialog" aria-labelledby="cookie-banner-title">
         <div class="content">
-            <span class="icon">⚡</span>
+            <span class="icon" style="color: #00ff88; font-size: 18px;">⚡</span>
             <div class="text">
-                <strong>Datenschutz & Cookies</strong>
+                <strong>Privacy & Cookies</strong>
                 <br>
-                Wir verwenden Cookies, um unser <strong>autonomes Data-Engineering</strong> zu betreiben und Sie <strong>globale Opportunities</strong> zu informieren.
-                <br>
-                Akzeptieren Sie unsere <strong>Datenpraxis</strong>?
+                We use cookies to ensure you get the best experience on our website and to seamlessly deliver our <strong>B2B intelligence services</strong>.
             </div>
-            <div style="display: flex; gap: 12px; align-items: center;">
-                <button onclick="rejectCookies()" class="reject-btn">Ablehnen</button>
-                <button onclick="acceptCookies()" class="accept-btn">Akzeptieren</button>
+            <div class="btn-group">
+                <button onclick="rejectCookies()" class="reject-btn">Decline</button>
+                <button onclick="acceptCookies()" class="accept-btn">Accept</button>
             </div>
         </div>
     </div>
 
     <script>
-        <!-- Cookie Banner JS - Accept Button Logic -->
         window.addEventListener('DOMContentLoaded', function() {
-            // Check if cookies were already accepted
             if (!localStorage.getItem('apex_data_cookie_consent')) {
                 document.getElementById('cookie-banner').classList.remove('hidden');
             }
         });
 
         function acceptCookies() {
-            // Set consent cookie for 365 days
-            const consent = {
-                consent: true,
-                consentDate: new Date().toISOString(),
-                consentIP: 'auto-detected',
-                consentBrowser: navigator.userAgent
-            };
-            localStorage.setItem('apex_data_cookie_consent', JSON.stringify(consent));
-            
-            // Hide banner
-            const banner = document.getElementById('cookie-banner');
-            if (banner) {
-                banner.classList.add('hidden');
-            }
+            localStorage.setItem('apex_data_cookie_consent', JSON.stringify({ consent: true, date: new Date().toISOString() }));
+            document.getElementById('cookie-banner').classList.add('hidden');
         }
 
         function rejectCookies() {
-            // Set reject consent for 365 days
-            const consent = {
-                consent: false,
-                consentDate: new Date().toISOString(),
-                consentIP: 'auto-detected',
-                consentBrowser: navigator.userAgent
-            };
-            localStorage.setItem('apex_data_cookie_consent', JSON.stringify(consent));
-            
-            // Hide banner
-            const banner = document.getElementById('cookie-banner');
-            if (banner) {
-                banner.classList.add('hidden');
-            }
+            localStorage.setItem('apex_data_cookie_consent', JSON.stringify({ consent: false, date: new Date().toISOString() }));
+            document.getElementById('cookie-banner').classList.add('hidden');
+        }
+        
+        function setLanguage(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            // Add translation logic here if needed
         }
     </script>
-
-    <script src="i18n.js">
-</script>
-
-    <!-- Schema.org Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Apex Data Engineering",
-      "description": "Autonomous AI-driven forensic data engineering for global B2B growth. GDPR & CCPA compliant.",
-      "url": "https://apex-data.werbesolutions.casa/",
-      "logo": "https://apex-data.werbesolutions.casa/logo.png",
-      "image": "https://apex-data.werbesolutions.casa/hero.jpg",
-      "telephone": "",
-      "email": "",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "DE",
-        "addressRegion": "Global"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "51.1657",
-        "longitude": "10.4515"
-      },
-      "sameAs": [
-        "https://linkedin.com/company/apex-data-engineering",
-        "https://twitter.com/apexdataeng"
-      ],
-      "priceRange": "$$$",
-      "openingHours": [
-        "Mo-Fr 09:00-18:00"
-      ],
-      "accepts": [
-        "B2B Companies",
-        "Agencies",
-        "Data-Driven Enterprises"
-      ],
-      "serviceType": [
-        "Data Engineering",
-        "Forensic Data Analysis",
-        "AI-Powered Lead Generation",
-        "Web Data Extraction"
-      ]
-    }
-    </script></script>
 </body>
 </html>
