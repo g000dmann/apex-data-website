@@ -12,17 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Base Styles (Inlined for simplicity, keep your external styles.css if preferred) */
-        body {
-            margin: 0;
-            background-color: #0a0f14;
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
+        /* Base Styles */
+        body { margin: 0; background-color: #0a0f14; color: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
         .glow-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden; pointer-events: none; }
         .glow { position: absolute; top: -20%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(0,255,136,0.05) 0%, rgba(0,0,0,0) 70%); }
         
+        /* Navigation */
         nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .logo { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.5px; }
         .logo span { color: #00ff88; }
@@ -35,22 +30,59 @@
         .lang-btn:hover { border-color: #00ff88; color: #00ff88; }
         .lang-btn.active { background: #00ff88; color: #000; border-color: #00ff88; }
 
+        /* Header & Hero */
         header { text-align: center; padding: 120px 20px 80px; max-width: 900px; margin: 0 auto; }
         h1 { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1.5px; }
         .gradient-text { background: linear-gradient(135deg, #fff 0%, #00ff88 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .subtitle { font-size: 1.2rem; color: rgba(255,255,255,0.6); line-height: 1.6; max-width: 700px; margin: 0 auto; }
 
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 40px; max-width: 1200px; margin: 0 auto; }
+        /* Stats Bar */
+        .stats-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 60px; padding: 40px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); border-top: 1px solid rgba(255,255,255,0.05); background: rgba(0,255,136,0.02); }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: #00ff88; }
+        .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
+
+        /* Features */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 80px 40px; max-width: 1200px; margin: 0 auto; }
         .feature-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 40px; border-radius: 8px; transition: transform 0.3s; }
         .feature-card:hover { transform: translateY(-5px); border-color: rgba(0,255,136,0.3); }
         .feature-card .icon { font-family: 'JetBrains Mono', monospace; font-size: 2rem; color: #00ff88; margin-bottom: 20px; font-weight: 700; opacity: 0.5; }
         .feature-card h3 { font-size: 1.3rem; margin-bottom: 15px; }
         .feature-card p { color: rgba(255,255,255,0.6); line-height: 1.6; font-size: 0.95rem; }
 
-        .cta-section { text-align: center; padding: 100px 20px; background: linear-gradient(0deg, rgba(0,255,136,0.05) 0%, rgba(10,15,20,1) 100%); }
+        /* Anatomy of a Lead */
+        .data-preview { max-width: 1000px; margin: 40px auto 80px; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
+        .section-sub { text-align: center; color: rgba(255,255,255,0.5); margin-bottom: 40px; font-size: 1.1rem; }
+        .data-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .data-tag { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 10px 18px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #ccc; transition: all 0.3s; }
+        .data-tag:hover { border-color: #00ff88; color: #fff; background: rgba(0,255,136,0.05); }
+        .data-tag.premium { border-color: rgba(0,255,136,0.5); color: #00ff88; }
+
+        /* Tiers Section */
+        .tiers-wrapper { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
+        .tiers-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .tier-card { background: rgba(10,15,20,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 40px; position: relative; overflow: hidden; }
+        .tier-card.featured { border-color: #00ff88; box-shadow: 0 0 30px rgba(0,255,136,0.1); transform: scale(1.02); }
+        .tier-badge { position: absolute; top: 15px; right: 15px; background: #00ff88; color: #000; font-size: 0.7rem; font-weight: 800; padding: 4px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
+        .tier-name { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
+        .tier-desc { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 30px; line-height: 1.5; }
+        .tier-features { list-style: none; padding: 0; margin: 0; }
+        .tier-features li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; align-items: center; gap: 10px; }
+        .tier-features li::before { content: '✓'; color: #00ff88; font-weight: bold; }
+
+        /* FAQ Section */
+        .faq-section { max-width: 800px; margin: 100px auto 60px; padding: 0 20px; }
+        .faq-item { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); margin-bottom: 15px; border-radius: 8px; padding: 25px; transition: border-color 0.3s; }
+        .faq-item:hover { border-color: rgba(255,255,255,0.15); }
+        .faq-question { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: #00ff88; }
+        .faq-answer { color: rgba(255,255,255,0.6); line-height: 1.6; font-size: 0.95rem; }
+
+        /* CTA & Form */
+        .cta-section { text-align: center; padding: 80px 20px 100px; background: linear-gradient(0deg, rgba(0,255,136,0.05) 0%, rgba(10,15,20,1) 100%); }
         .form-container { max-width: 600px; margin: 0 auto; background: rgba(0,0,0,0.4); padding: 40px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
-        .input-group { display: flex; gap: 15px; margin-bottom: 15px; }
-        input { flex: 1; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 6px; font-family: 'Inter', sans-serif; }
+        .input-group { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
+        input { flex: 1; min-width: 250px; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 6px; font-family: 'Inter', sans-serif; }
         input:focus { outline: none; border-color: #00ff88; }
         .cta-button { width: 100%; padding: 18px; background: #00ff88; color: #000; border: none; font-weight: 800; font-size: 1.1rem; border-radius: 6px; cursor: pointer; transition: all 0.3s; margin-top: 10px; }
         .cta-button:hover { background: #00cc6a; transform: translateY(-2px); }
@@ -68,30 +100,6 @@
         #cookie-banner .btn-group { display: flex; gap: 12px; align-items: center; }
         #cookie-banner .reject-btn { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.2); padding: 14px 28px; font-size: 14px; cursor: pointer; border-radius: 6px; }
         #cookie-banner .accept-btn { background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%); color: #000; border: none; padding: 14px 32px; font-size: 14px; font-weight: 600; cursor: pointer; border-radius: 6px; }
-        /* --- NEUE SEKTIONEN CSS --- */
-.stats-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; padding: 40px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); border-top: 1px solid rgba(255,255,255,0.05); background: rgba(0,255,136,0.02); }
-.stat-item { text-align: center; }
-.stat-number { font-size: 2.5rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: #00ff88; }
-.stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
-
-.data-preview { max-width: 1000px; margin: 80px auto; padding: 0 20px; }
-.section-title { text-align: center; font-size: 2.5rem; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px; }
-.section-sub { text-align: center; color: rgba(255,255,255,0.5); margin-bottom: 40px; }
-.data-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.data-tag { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 10px 18px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #ccc; transition: all 0.3s; }
-.data-tag:hover { border-color: #00ff88; color: #fff; background: rgba(0,255,136,0.05); }
-.data-tag.premium { border-color: rgba(0,255,136,0.5); color: #00ff88; }
-
-.tiers-section { max-width: 1200px; margin: 80px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.tier-card { background: rgba(10,15,20,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 40px; position: relative; overflow: hidden; }
-.tier-card.featured { border-color: #00ff88; box-shadow: 0 0 30px rgba(0,255,136,0.1); transform: scale(1.02); }
-.tier-badge { position: absolute; top: 15px; right: 15px; background: #00ff88; color: #000; font-size: 0.7rem; font-weight: 800; padding: 4px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
-.tier-name { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
-.tier-desc { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 30px; line-height: 1.5; }
-.tier-features { list-style: none; padding: 0; margin: 0; }
-.tier-features li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; color: rgba(255,255,255,0.8); display: flex; align-items: center; gap: 10px; }
-.tier-features li::before { content: '✓'; color: #00ff88; font-weight: bold; }
-/* ------------------------ */
     </style>
 </head>
 <body>
@@ -118,22 +126,41 @@
             <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// EXCLUSIVE B2B LEAD OPPORTUNITIES</p>
             <p data-i18n="subtitle" class="subtitle">Stop wasting time on outdated lists. We provide your sales team with verified decision-makers, comprehensive business profiles, and the exact pain points you need to close the deal.</p>
         </header>
-            <div class="stats-bar">
+        
+        <div class="stats-bar">
             <div class="stat-item">
                 <div class="stat-number">98%</div>
                 <div class="stat-label">Email Deliverability</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Opt-In Free (Cold Email Ready)</div>
+                <div class="stat-label">Opt-In Free Ready</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">Zero</div>
                 <div class="stat-label">Generic Info@ Emails</div>
             </div>
         </div>
+
         <section class="features">
-            <section class="data-preview">
+            <div class="feature-card">
+                <div class="icon">01</div>
+                <h3 data-i18n="feature1_title">Verified Decision Makers</h3>
+                <p data-i18n="feature1_desc">Gain direct access to CEOs, founders, and key stakeholders. Every contact is cross-referenced to ensure your pitch reaches the person holding the budget.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">02</div>
+                <h3 data-i18n="feature2_title">Deep Business Insights</h3>
+                <p data-i18n="feature2_desc">Don't go in cold. We provide rich profiles including company size, operational focus, and digital infrastructure so you understand their business before the first call.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">03</div>
+                <h3 data-i18n="feature3_title">Ready-to-Pitch Data</h3>
+                <p data-i18n="feature3_desc">We deliver the exact angles that convert. From compliance risks to missed market opportunities, our data gives your sales team the ultimate unfair advantage.</p>
+            </div>
+        </section>
+
+        <section class="data-preview">
             <h2 class="section-title">The Anatomy of a Lead</h2>
             <p class="section-sub">We don't just scrape names. We engineer complete business profiles designed to convert.</p>
             
@@ -152,64 +179,70 @@
                 <div class="data-tag premium">Custom Sales Hook (AI Generated)</div>
             </div>
         </section>
-            <div class="feature-card">
-                <div class="icon">01</div>
-                <h3 data-i18n="feature1_title">Verified Decision Makers</h3>
-                <p data-i18n="feature1_desc">Gain direct access to CEOs, founders, and key stakeholders. Every contact is cross-referenced to ensure your pitch reaches the person holding the budget.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">02</div>
-                <h3 data-i18n="feature2_title">Deep Business Insights</h3>
-                <p data-i18n="feature2_desc">Don't go in cold. We provide rich profiles including company size, operational focus, and digital infrastructure so you understand their business before the first call.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">03</div>
-                <h3 data-i18n="feature3_title">Ready-to-Pitch Data</h3>
-                <p data-i18n="feature3_desc">We deliver the exact angles that convert. From compliance risks to missed market opportunities, our data gives your sales team the ultimate unfair advantage.</p>
-            </div>
-        </section>
-<h2 class="section-title" style="margin-top: 100px;">Lead Intelligence Tiers</h2>
-        <p class="section-sub">Not all leads are created equal. Our engine grades opportunities based on revenue potential.</p>
-        
-        <section class="tiers-section">
-            <div class="tier-card">
-                <div class="tier-name">Titan Elite</div>
-                <div class="tier-desc">High-quality foundational leads for volume outreach. Perfect for standard cold email campaigns.</div>
-                <ul class="tier-features">
-                    <li>Verified Decision Maker</li>
-                    <li>Personal Email Address</li>
-                    <li>Company HQ & Details</li>
-                    <li>Basic Tech Audit (CMS)</li>
-                </ul>
-            </div>
-            
-            <div class="tier-card featured">
-                <div class="tier-badge">MOST POPULAR</div>
-                <div class="tier-name">God-Mode</div>
-                <div class="tier-desc">Enriched profiles with deep technical vulnerabilities to fuel highly personalized outbound.</div>
-                <ul class="tier-features">
-                    <li>Everything in Titan</li>
-                    <li>Active Ad Spend Signals</li>
-                    <li>ADA Compliance Risk Audit</li>
-                    <li>Custom AI Icebreaker Hook</li>
-                    <li>Direct Phone (When Available)</li>
-                </ul>
-            </div>
 
-            <div class="tier-card">
-                <div class="tier-name">Apex Predator</div>
-                <div class="tier-desc">The absolute top 1% of the market. Massive operations with severe digital blindspots.</div>
-                <ul class="tier-features">
-                    <li>Everything in God-Mode</li>
-                    <li>Multi-Contact Matrix (CEO + Marketing)</li>
-                    <li>Guaranteed Direct Cell Phone</li>
-                    <li>Enterprise IT Infrastructure Leak</li>
-                    <li>Highest Commission Potential</li>
-                </ul>
+        <section class="tiers-wrapper">
+            <h2 class="section-title">Lead Intelligence Tiers</h2>
+            <p class="section-sub">Not all leads are created equal. Our engine grades opportunities based on revenue potential.</p>
+            
+            <div class="tiers-section">
+                <div class="tier-card">
+                    <div class="tier-name">Titan Elite</div>
+                    <div class="tier-desc">High-quality foundational leads for volume outreach. Perfect for standard cold email campaigns.</div>
+                    <ul class="tier-features">
+                        <li>Verified Decision Maker</li>
+                        <li>Personal Email Address</li>
+                        <li>Company HQ & Details</li>
+                        <li>Basic Tech Audit (CMS)</li>
+                    </ul>
+                </div>
+                
+                <div class="tier-card featured">
+                    <div class="tier-badge">MOST POPULAR</div>
+                    <div class="tier-name">God-Mode</div>
+                    <div class="tier-desc">Enriched profiles with deep technical vulnerabilities to fuel highly personalized outbound.</div>
+                    <ul class="tier-features">
+                        <li>Everything in Titan</li>
+                        <li>Active Ad Spend Signals</li>
+                        <li>ADA Compliance Risk Audit</li>
+                        <li>Custom AI Icebreaker Hook</li>
+                        <li>Direct Phone (When Available)</li>
+                    </ul>
+                </div>
+
+                <div class="tier-card">
+                    <div class="tier-name">Apex Predator</div>
+                    <div class="tier-desc">The absolute top 1% of the market. Massive operations with severe digital blindspots.</div>
+                    <ul class="tier-features">
+                        <li>Everything in God-Mode</li>
+                        <li>Multi-Contact Matrix (CEO + Marketing)</li>
+                        <li>Guaranteed Direct Cell Phone</li>
+                        <li>Enterprise IT Infrastructure Leak</li>
+                        <li>Highest Commission Potential</li>
+                    </ul>
+                </div>
             </div>
         </section>
-        
+
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-sub">Everything you need to know about our data.</p>
+            
+            <div class="faq-item">
+                <div class="faq-question">Are your lists CCPA & GDPR compliant?</div>
+                <div class="faq-answer">Yes. We strictly collect B2B data from public business registries, professional networks, and corporate websites. We do not aggregate private consumer data, ensuring full compliance for cold outbound campaigns.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How fresh is the data?</div>
+                <div class="faq-answer">Unlike static databases like ZoomInfo or Apollo that sell years-old data, our lists are generated entirely on-demand. When you request a batch, our engine scans the live web in real-time, ensuring zero decay and maximum deliverability.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you sell the same list to my competitors?</div>
+                <div class="faq-answer">No. Every batch we engineer is exclusively generated for the client who requested it based on their specific geo-targets and niche requirements. You won't be competing with 50 other agencies emailing the same list.</div>
+            </div>
+        </section>
+
         <div class="cta-section">
+            <h2 class="section-title" style="margin-bottom: 40px;">Ready to dominate your market?</h2>
             <div class="form-container">
                 <form action="https://apex-data.werbesolutions.at/webhook/inbound-lead" method="POST">
                     <div class="input-group">
