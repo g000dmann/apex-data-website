@@ -9,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        body { margin: 0; background-color: #0a0f14; color: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .glow-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden; pointer-events: none; }
+        .glow { position: absolute; top: -20%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(0,255,136,0.05) 0%, rgba(0,0,0,0) 70%); }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.5px; }
+        .logo span { color: #00ff88; }
+        .status-badge { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: rgba(0,255,136,0.1); color: #00ff88; padding: 6px 12px; border-radius: 4px; display: flex; align-items: center; gap: 8px; }
+        .pulse { width: 6px; height: 6px; background-color: #00ff88; border-radius: 50%; box-shadow: 0 0 8px #00ff88; animation: pulse 2s infinite; }
+
         .legal-content {
             max-width: 800px;
             margin: 100px auto;
@@ -18,10 +28,16 @@
             border-radius: 8px;
             line-height: 1.6;
         }
-        h2 { color: #fff; margin-top: 30px; font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; }
-        p { color: rgba(255, 255, 255, 0.7); margin-bottom: 20px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #aaa; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; }
-        .back-link:hover { color: #fff; }
+        .pre-headline { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #00ff88; letter-spacing: 1px; margin-bottom: 10px; }
+        h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 30px; letter-spacing: -1px; margin-top: 0; }
+        h2 { color: #fff; margin-top: 40px; font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        p { color: rgba(255, 255, 255, 0.7); margin-bottom: 20px; font-size: 0.95rem; }
+        .back-link { display: inline-block; margin-bottom: 40px; color: #aaa; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; transition: color 0.3s; }
+        .back-link:hover { color: #00ff88; }
+        
+        footer { text-align: center; padding: 40px; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 50px; }
+        .footer-info { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 10px; }
+        .footer-links { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: rgba(255,255,255,0.3); }
     </style>
 </head>
 <body>
@@ -30,7 +46,7 @@
     </div>
     
     <nav>
-        <div class="logo">APEX DATA // <span>ENGINEERING</span></div>
+        <div class="logo">APEX DATA // <span>INTELLIGENCE</span></div>
         <div class="status-badge"><span class="pulse"></span> LEGAL SECURE</div>
     </nav>
 
@@ -40,28 +56,36 @@
             <div class="pre-headline">LEGAL FRAMEWORK</div>
             <h1>Terms of Service</h1>
             
-            <h2>1. Digital Goods & Delivery</h2>
-            <p>Apex Data Engineering provides customized B2B data batches and technical forensic reports. Due to the digital nature of these products and the immediate access to proprietary intelligence, all sales are final.</p>
+            <p><strong>Operator:</strong> Apex Data Engineering is a commercial service operated by Werbesolutions e.U., Schattendorf, Austria.</p>
 
-            <h2>2. No Refund Policy</h2>
-            <p>Once a data batch has been delivered or a custom crawl has been initiated, no refunds will be issued. We do not offer credits or returns for digital data assets under any circumstances.</p>
+            <h2>1. Digital Goods & Delivery</h2>
+            <p>Apex Data Engineering provides customized B2B data batches and technical forensic reports. Due to the digital nature of these products and the immediate access to proprietary intelligence upon delivery, all sales are final.</p>
+
+            <h2>2. Strict No Refund Policy</h2>
+            <p>Once a data batch has been delivered or a custom crawl has been initiated, absolutely no refunds will be issued. We do not offer credits, chargebacks, or returns for digital data assets under any circumstances. By purchasing, you acknowledge the immediate transfer of value.</p>
 
             <h2>3. Usage & License</h2>
-            <p>Data provided is for the internal use of the purchasing agency only. Redistribution, resale, or public disclosure of our forensic data points is strictly prohibited unless explicitly authorized in writing.</p>
+            <p>Data provided is exclusively for the internal business use of the purchasing entity. Redistribution, resale, brokering, or public disclosure of our forensic data points and lead lists is strictly prohibited unless explicitly authorized by Werbesolutions e.U. in writing.</p>
 
-            <h2>4. Data Accuracy</h2>
-            <p>While our V12 Autonomous Engine utilizes high-precision infiltration methods, we provide data on an "as-is" basis. Commercial outcomes depend on individual outreach execution.</p>
+            <h2>4. Outreach Compliance & Client Responsibility</h2>
+            <p>Apex Data Engineering acts strictly as a data provider. You (the client) agree to use the provided data in full compliance with all applicable local, state, and federal laws regarding B2B communication. This includes, but is not limited to, the CAN-SPAM Act, TCPA, CCPA, and GDPR. The execution, legality, and deliverability of your outreach campaigns are solely your responsibility.</p>
 
-            <h2>5. Chargeback Prevention</h2>
-            <p>By completing a purchase via our Stripe-enabled infrastructure, you acknowledge and agree to this strictly non-refundable policy. Any attempted chargeback for digital goods delivered will be contested using this agreement as forensic evidence of contract.</p>
+            <h2>5. Data Accuracy & Limitation of Liability</h2>
+            <p>While our Autonomous Engine utilizes high-precision extraction methods from public sources, we provide data on an "as-is" and "as-available" basis without warranties of any kind. Commercial outcomes depend on your individual outreach execution. In no event shall Werbesolutions e.U. be liable for any indirect, incidental, special, or consequential damages, including loss of revenue, or legal penalties arising out of your use of the provided data.</p>
 
-            <p style="margin-top: 50px; font-size: 0.8rem; color: rgba(255, 255, 255, 0.4);">© 2026 Apex Data Engineering | Werbesolutions e.U.</p>
+            <h2>6. Chargeback Prevention</h2>
+            <p>By completing a purchase via our payment infrastructure, you acknowledge and agree to this strictly non-refundable policy. Any attempted chargeback or payment dispute for digital goods delivered will be aggressively contested using this agreement, server logs, and delivery receipts as forensic evidence of contract fulfillment.</p>
+
+            <h2>7. Governing Law & Jurisdiction</h2>
+            <p>These Terms of Service and any separate agreements whereby we provide you services shall be governed by and construed in accordance with the laws of Austria. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the competent courts in Eisenstadt, Austria.</p>
+
+            <p style="margin-top: 50px; font-size: 0.8rem; color: rgba(255, 255, 255, 0.4);">© 2026 Apex Data Engineering | Werbesolutions e.U.<br>Last updated: April 2026</p>
         </section>
     </main>
 
     <footer>
         <div class="footer-grid">
-            <div class="footer-info">© 2026 Apex Data Engineering | Schattendorf Hardware Duo Cluster</div>
+            <div class="footer-info">© 2026 Apex Data Engineering | Werbesolutions e.U.</div>
             <div class="footer-links">TX // GLOBAL // APEX</div>
         </div>
     </footer>
