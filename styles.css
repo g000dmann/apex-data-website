@@ -315,11 +315,150 @@ footer {
         padding: 15px 30px;
         font-size: 1rem;
     }
-    
+
     footer {
         flex-direction: column;
         text-align: center;
         gap: 10px;
         padding: 30px 5%;
+    }
+}
+
+/* === TIERS SECTION (Preis + Buy-Button) === */
+.tiers-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.tier-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 32px 28px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tier-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(39,174,96,0.4);
+}
+
+.tier-card.featured {
+    border-color: var(--accent);
+    box-shadow: 0 0 30px rgba(39,174,96,0.15);
+}
+
+.tier-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: #000;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.tier-name {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.tier-price {
+    font-family: var(--font-mono);
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1.1;
+    margin: 12px 0 4px;
+}
+
+.tier-price-sub {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 18px;
+}
+
+.tier-desc {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+}
+
+.tier-features {
+    list-style: none;
+    margin: 0 0 28px 0;
+    padding: 0;
+    flex: 1;
+}
+
+.tier-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text);
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 22px;
+}
+
+.tier-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.tier-buy-btn {
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.tier-buy-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.tier-buy-btn.primary {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+}
+
+.tier-buy-btn.primary:hover {
+    background: #2ecc71;
+    color: #000;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .tiers-section {
+        grid-template-columns: 1fr;
     }
 }

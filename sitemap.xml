@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apex-data.werbesolutions.casa/</loc>
+    <loc>https://apex-data.io/</loc>
     <priority>1.0</priority>
-    <changefreq>daily</changefreq>
-    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://apex-data.io/privacy.html</loc>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://apex-data.io/terms.html</loc>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

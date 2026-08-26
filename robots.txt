@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://apex-data.werbesolutions.casa/sitemap.xml
+Disallow: /admin/
+
+Sitemap: https://apex-data.io/sitemap.xml
