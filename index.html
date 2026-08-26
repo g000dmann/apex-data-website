@@ -155,6 +155,107 @@
         .modal-title { font-family: 'JetBrains Mono', monospace; color: #00ff88; font-size: 1.2rem; margin-bottom: 15px; margin-top: 0;}
         .modal-desc { color: rgba(255,255,255,0.8); line-height: 1.6; font-size: 1rem; }
         .modal-usecase { margin-top: 20px; padding-top: 20px; border-top: 1px dashed rgba(255,255,255,0.1); font-size: 0.85rem; color: rgba(255,255,255,0.5); font-style: italic; }
+
+        /* === TIERS (Preis + Buy-Button) === */
+        .tiers-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 50px;
+        }
+        .tier-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 32px 28px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .tier-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(0,255,136,0.4);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        .tier-card.featured {
+            border-color: rgba(0,255,136,0.5);
+            box-shadow: 0 0 40px rgba(0,255,136,0.1);
+        }
+        .tier-badge {
+            position: absolute;
+            top: -12px; left: 50%;
+            transform: translateX(-50%);
+            background: #00ff88; color: #000;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem; font-weight: 700;
+            padding: 4px 12px; border-radius: 4px;
+            letter-spacing: 1px;
+        }
+        .tier-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem; font-weight: 700;
+            color: #fff; text-transform: uppercase;
+            letter-spacing: 1px; margin-bottom: 8px;
+        }
+        .tier-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.6rem; font-weight: 800;
+            color: #00ff88; line-height: 1.1;
+            margin: 12px 0 4px;
+        }
+        .tier-price-sub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem; color: rgba(255,255,255,0.5);
+            margin-bottom: 18px;
+        }
+        .tier-desc {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem; margin-bottom: 18px;
+        }
+        .tier-features {
+            list-style: none; margin: 0 0 28px 0; padding: 0; flex: 1;
+        }
+        .tier-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.9rem;
+            position: relative; padding-left: 22px;
+        }
+        .tier-features li::before {
+            content: "✓"; position: absolute; left: 0;
+            color: #00ff88; font-weight: 700;
+        }
+        .tier-buy-btn {
+            display: block; text-align: center;
+            padding: 14px 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            background: transparent;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem; font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+        }
+        .tier-buy-btn:hover {
+            border-color: #00ff88;
+            color: #00ff88;
+            background: rgba(0,255,136,0.05);
+        }
+        .tier-buy-btn.primary {
+            background: #00ff88; color: #000; border-color: #00ff88;
+        }
+        .tier-buy-btn.primary:hover {
+            background: #2eff9a; color: #000;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0,255,136,0.3);
+        }
+        @media (max-width: 900px) {
+            .tiers-section { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
