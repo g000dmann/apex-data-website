@@ -7,8 +7,132 @@
     <meta name="description" content="Apex Data Engineering provides meticulously curated B2B lead lists and actionable business intelligence for agencies and enterprises. Get direct access to verified decision-makers.">
     <meta name="keywords" content="B2B leads, lead generation, business intelligence, decision makers, sales growth, apex data">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://apex-data.werbesolutions.at/">
+    <link rel="canonical" href="https://apex-data.io/">
+    <link rel="alternate" hreflang="en" href="https://apex-data.io/">
+    <link rel="alternate" hreflang="de" href="https://apex-data.io/?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://apex-data.io/">
     <link rel="icon" type="image/png" href="favicon-32x32.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apex-data.io/">
+    <meta property="og:title" content="Apex Data Engineering - Premium B2B Lead Intelligence">
+    <meta property="og:description" content="Meticulously curated B2B lead lists and actionable business intelligence for agencies. Verified decision-makers, GDPR-aligned B2B data.">
+    <meta property="og:image" content="https://apex-data.io/og-image.png?v=2">
+    <meta property="og:site_name" content="Apex Data Engineering">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://apex-data.io/">
+    <meta name="twitter:title" content="Apex Data Engineering - Premium B2B Lead Intelligence">
+    <meta name="twitter:description" content="Verified B2B leads, GDPR-aligned. For agencies that close.">
+    <meta name="twitter:image" content="https://apex-data.io/og-image.png?v=2">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://apex-data.io/#org",
+          "name": "Apex Data Engineering",
+          "url": "https://apex-data.io/",
+          "logo": "https://apex-data.io/Logo.jpg",
+          "description": "Premium B2B Lead Intelligence. Verified decision-makers, GDPR-aligned B2B data, built for agencies and growth teams.",
+          "founder": {
+            "@type": "Person",
+            "name": "Kevin Guttmann"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@werbesolutions.at",
+            "contactType": "sales",
+            "availableLanguage": ["English", "German"]
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Apex Data Intelligence Engine",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Autonomous B2B lead intelligence platform. Enriches company data with decision-maker contacts, technology stack, and verified contact channels.",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Titan Elite",
+              "price": "150",
+              "priceCurrency": "USD",
+              "description": "10 verified B2B leads"
+            },
+            {
+              "@type": "Offer",
+              "name": "God-Mode",
+              "price": "500",
+              "priceCurrency": "USD",
+              "description": "50 enriched B2B leads with deep intel"
+            },
+            {
+              "@type": "Offer",
+              "name": "Apex Predator",
+              "price": "1000",
+              "priceCurrency": "USD",
+              "description": "100 premium B2B leads, top 1% market"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are your lists CCPA & GDPR aligned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We collect exclusively professional B2B data from public business registries, professional networks, and corporate websites. We do not aggregate private consumer data. Data is processed under GDPR Art. 6(1)(f) legitimate interest for B2B marketing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How fresh is the data?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every batch is generated on-demand from the live web. No static database, no decay. Maximum deliverability because the data is hours old, not years."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you sell the same list to my competitors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Every batch is generated exclusively for the requesting client based on their geo-targets and niche. You will not compete with 50 other agencies emailing the same list."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Analytics: Enable ONE of the following by uncommenting & filling in your site ID -->
+    <!-- Plausible (privacy-friendly, no cookie banner needed) -->
+    <!-- <script defer data-domain="apex-data.io" src="https://plausible.logicrigs.at/js/script.js"></script> -->
+    <!-- Matomo (self-hosted) -->
+    <!-- <script>
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://matomo.logicrigs.at/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script> -->
+    <!-- END Analytics -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -256,6 +380,19 @@
         @media (max-width: 900px) {
             .tiers-section { grid-template-columns: 1fr; }
         }
+    
+        /* === TRUST SECTION === */
+        .trust-section { padding: 80px 0; max-width: 1200px; margin: 0 auto; }
+        .trust-section .section-title { font-family: 'JetBrains Mono', monospace; font-size: 1.8rem; color: #fff; text-align: center; margin-bottom: 16px; }
+        .trust-section .section-sub { color: rgba(255,255,255,0.5); text-align: center; margin-bottom: 50px; font-size: 0.95rem; }
+        .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .trust-item { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 28px 24px; text-align: center; transition: border-color 0.2s ease, transform 0.2s ease; }
+        .trust-item:hover { border-color: rgba(0,255,136,0.3); transform: translateY(-2px); }
+        .trust-icon { font-size: 2.2rem; margin-bottom: 12px; line-height: 1; }
+        .trust-label { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #00ff88; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; font-weight: 600; }
+        .trust-desc { color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6; }
+        @media (max-width: 900px) { .trust-grid { grid-template-columns: 1fr; } }
+    
     </style>
 </head>
 <body>
@@ -295,7 +432,7 @@
             </div>
             <div class="stat-item">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Opt-In Free Ready</div>
+                <div class="stat-label">100% Public-Source B2B</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">Zero</div>
@@ -467,6 +604,46 @@
             </div>
         </section>
 
+        
+        <!-- TRUST SECTION -->
+        <section class="trust-section">
+            <h2 class="section-title">Built on Open Source, Verified by Architecture</h2>
+            <p class="section-sub">No black boxes. No vendor lock-in. Every component of our stack is auditable.</p>
+            
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">27+</div>
+                    <div class="trust-label">Open-Source OSINT Tools</div>
+                    <div class="trust-desc">Maigret, theHarvester, Findomain, Sublist3r, SpiderFoot, PhoneInfoga, and 20+ more, all running on your data.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <div class="trust-label">GDPR Art. 6(1)(f)</div>
+                    <div class="trust-desc">Legitimate interest for B2B marketing. Public registries, professional networks, corporate sites only. Zero private consumer data.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-label">Live Data Engine</div>
+                    <div class="trust-desc">n8n + Ollama local LLM + custom automation. Every batch is fresh — hours old, not years like static databases.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💳</div>
+                    <div class="trust-label">Stripe-Verified Payments</div>
+                    <div class="trust-desc">PCI-DSS compliant. Credit card data never touches our servers. Pay in seconds, get data in minutes.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🇦🇹</div>
+                    <div class="trust-label">EU-Operated</div>
+                    <div class="trust-desc">Werbesolutions e.U. — Burgenland, Austria. ATU75131812, FN 526616k. EU jurisdiction, EU privacy law.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🚫</div>
+                    <div class="trust-label">No Re-Selling</div>
+                    <div class="trust-desc">Every batch is exclusive. Generated for you, on demand, never shared with competitors.</div>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ SECTION -->
         <section class="faq-section">
             <h2 class="section-title">Frequently Asked Questions</h2>
@@ -490,16 +667,16 @@
         <div class="cta-section">
             <h2 class="section-title" style="margin-bottom: 40px;">Ready to dominate your market?</h2>
             <div class="form-container">
-                <form action="https://apex-data.werbesolutions.at/webhook/inbound-lead" method="POST">
+                <form id="contact-form" action="mailto:kevin@apex-affiliates.com" method="POST" enctype="text/plain">
                     <div class="input-group">
-                        <input data-i18n="placeholder_agency" type="text" name="companyName" placeholder="Your Company Name" required>
-                        <input data-i18n="placeholder_niche" type="text" name="targetNiche" placeholder="Desired Target Niche (e.g. Roofing)" required>
+                        <input data-i18n="placeholder_agency" id="f_company" type="text" name="company" placeholder="Your Company Name" required>
+                        <input data-i18n="placeholder_niche" id="f_niche" type="text" name="niche" placeholder="Desired Target Niche (e.g. Roofing)" required>
                     </div>
                     <div class="input-group">
-                        <input data-i18n="placeholder_location" type="text" name="location" placeholder="Target US State / City" required>
-                        <input data-i18n="placeholder_email" type="email" name="email" placeholder="Your Business Email" required>
+                        <input data-i18n="placeholder_location" id="f_location" type="text" name="location" placeholder="Target US State / City" required>
+                        <input data-i18n="placeholder_email" id="f_email" type="email" name="email" placeholder="Your Business Email" required>
                     </div>
-                    <button data-i18n="button_request" type="submit" class="cta-button">Request Premium Lead Batch</button>
+                    <button data-i18n="button_request" type="submit" class="cta-button" onclick="event.preventDefault(); var s='Apex Data Inquiry'; var b='Company: '+encodeURIComponent(document.getElementById('f_company').value)+'\nNiche: '+encodeURIComponent(document.getElementById('f_niche').value)+'\nLocation: '+encodeURIComponent(document.getElementById('f_location').value)+'\nEmail: '+encodeURIComponent(document.getElementById('f_email').value); window.location.href='mailto:kevin@apex-affiliates.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);">Request Premium Lead Batch</button>
                 </form>
             </div>
             <p class="cta-sub">Strict capacity limits apply. Prioritizing long-term data partnerships.</p>
