@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Apex Data</title>
+    <meta name="description" content="Kontakt – Apex Data Engineering / Werbesolutions e.U. E-Mail: kevin@apex-data.io, Antwort innerhalb von 24 Stunden.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a2e;
+            background: #0a0a1a;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 48px;
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 12px;
+            color: #e0e0ff;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #1e1e3a;
+        }
+        p { margin-bottom: 16px; color: #b0b0c0; }
+        a { color: #7c8aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer-note {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid #1e1e3a;
+            font-size: 0.85rem;
+            color: #4b4b6b;
+        }
+        .info-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #00ff88;
+            min-width: 150px;
+        }
+        .lang-divider {
+            margin-top: 72px;
+            padding-top: 48px;
+            border-top: 1px solid #1e1e3a;
+        }
+        form { margin-top: 8px; }
+        label { display: block; margin-bottom: 16px; color: #b0b0c0; font-size: 0.9rem; }
+        input, textarea {
+            width: 100%;
+            margin-top: 6px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 6px;
+            color: #ffffff;
+            padding: 10px 12px;
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+        input:focus, textarea:focus { outline: none; border-color: #00ff88; }
+        .cta-button {
+            background: #00ff88;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .cta-button:hover { background: #00cc6a; }
+        .hint { font-size: 0.8rem; color: #4b4b6b; margin-top: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kontakt</h1>
+        <p class="subtitle">Schreib uns – wir antworten schnell.</p>
+
+        <h2>Direkter Kontakt</h2>
+        <div class="info-row">
+            <span class="info-label">E-Mail:</span>
+            <a href="mailto:kevin@apex-data.io">kevin@apex-data.io</a>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Antwortzeit:</span>
+            <span>innerhalb von 24 Stunden (Mo–Fr)</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Firmensitz:</span>
+            <span>Arbeitergasse 123, 7022 Schattendorf, Österreich</span>
+        </div>
+
+        <h2>Nachricht senden</h2>
+        <p>Der Button öffnet deine E-Mail-App mit vorbefülltem Text – kein Formular-Server, keine Datenübertragung an Dritte.</p>
+        <form id="kontakt-form" onsubmit="return false;">
+            <label for="k_name">Name</label>
+            <input type="text" id="k_name" name="name" placeholder="Dein Name" autocomplete="name">
+            <label for="k_email">E-Mail</label>
+            <input type="email" id="k_email" name="email" placeholder="deine@email.com" autocomplete="email">
+            <label for="k_msg">Nachricht</label>
+            <textarea id="k_msg" name="message" rows="5" placeholder="Dein Anliegen (z. B. Datenanfrage, Partnerschaft, Rückmeldung)"></textarea>
+            <button type="button" class="cta-button" onclick="(function(){var n=document.getElementById('k_name').value;var e=document.getElementById('k_email').value;var m=document.getElementById('k_msg').value;var s='Kontakt '+(n||'Apex Data');var b='Name: '+encodeURIComponent(n)+'\nE-Mail: '+encodeURIComponent(e)+'\n\n'+encodeURIComponent(m);window.location.href='mailto:kevin@apex-data.io?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);})()">E-Mail senden</button>
+            <p class="hint">Hinweis: Ohne gültige Eingabe im Namen wird eine Standard-Betreffzeile verwendet. Dein E-Mail-Client muss konfiguriert sein (mailto:).</p>
+        </form>
+
+        <!-- ============ ENGLISH SECTION ============ -->
+        <div class="lang-divider">
+        <h1>Contact</h1>
+        <p class="subtitle">Reach out — we respond fast.</p>
+
+        <h2>Direct Contact</h2>
+        <div class="info-row">
+            <span class="info-label">Email:</span>
+            <a href="mailto:kevin@apex-data.io">kevin@apex-data.io</a>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Response Time:</span>
+            <span>within 24 hours (Mon–Fri)</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Registered Office:</span>
+            <span>Arbeitergasse 123, 7022 Schattendorf, Austria</span>
+        </div>
+
+        <h2>Send a Message</h2>
+        <p>The button opens your email app with a prefilled message — no form server, no third-party data transfer.</p>
+        <form id="kontakt-form-en" onsubmit="return false;">
+            <label for="k_name_en">Name</label>
+            <input type="text" id="k_name_en" name="name" placeholder="Your name" autocomplete="name">
+            <label for="k_email_en">Email</label>
+            <input type="email" id="k_email_en" name="email" placeholder="you@company.com" autocomplete="email">
+            <label for="k_msg_en">Message</label>
+            <textarea id="k_msg_en" name="message" rows="5" placeholder="Your inquiry (e.g. data batch, partnership, feedback)"></textarea>
+            <button type="button" class="cta-button" onclick="(function(){var n=document.getElementById('k_name_en').value;var e=document.getElementById('k_email_en').value;var m=document.getElementById('k_msg_en').value;var s='Contact '+(n||'Apex Data');var b='Name: '+encodeURIComponent(n)+'\nEmail: '+encodeURIComponent(e)+'\n\n'+encodeURIComponent(m);window.location.href='mailto:kevin@apex-data.io?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);})()">Send Email</button>
+            <p class="hint">Note: a default subject is used if the name field is empty. Your email client must be configured (mailto:).</p>
+        </form>
+        </div>
+
+        <p class="footer-note">Stand: September 2026<br>
+        Werbesolutions e.U. · Arbeitergasse 123 · 7022 Schattendorf, Österreich</p>
+    </div>
+</body>
+</html>
