@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Unsubscribe — Apex Data</title>
+<link rel="icon" type="image/png" href="../favicon-32x32.png">
+<style>
+:root{--bg:#0b0d10;--card:#14181d;--fg:#e8eaed;--mut:#9aa3ad;--acc:#4da3ff;--brd:#242a31}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+.wrap{max-width:640px;margin:0 auto;padding:48px 20px}
+.card{background:var(--card);border:1px solid var(--brd);border-radius:14px;padding:28px 26px}
+h1{font-size:24px;margin:0 0 6px}
+p{color:var(--mut);font-size:15px}
+label{display:block;font-size:13px;color:var(--mut);margin:18px 0 6px}
+input[type=email]{width:100%;padding:12px 14px;border-radius:9px;border:1px solid var(--brd);background:#0f1216;color:var(--fg);font-size:15px}
+button{margin-top:16px;width:100%;padding:13px 18px;border:0;border-radius:9px;background:var(--acc);color:#04121f;font-size:15px;font-weight:700;cursor:pointer}
+button:hover{filter:brightness(1.08)}
+.note{margin-top:22px;padding-top:18px;border-top:1px solid var(--brd);font-size:13px;color:var(--mut)}
+a{color:var(--acc)}
+.mail{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--fg);background:#0f1216;border:1px solid var(--brd);border-radius:8px;padding:9px 11px;display:inline-block;margin-top:6px;word-break:break-all}
+.addr{margin-top:20px;font-size:12px;color:#7b858f}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Unsubscribe</h1>
+    <p>One click and you're out. We remove you from all lists within 10 business days and will not contact you again.</p>
+
+    <form id="f" onsubmit="return go(event)">
+      <label for="e">Your email address</label>
+      <input id="e" type="email" placeholder="name@company.com" autocomplete="email" required>
+      <button type="submit">Unsubscribe me</button>
+    </form>
+
+    <p style="margin-top:14px;font-size:13px">This opens your mail app with a ready-made request — just press send. Nothing is stored on this page.</p>
+
+    <div class="note">
+      <b style="color:var(--fg)">Prefer plain email?</b><br>
+      Write to us directly:
+      <div class="mail">unsubscribe@apex-affiliates.com</div>
+      <br><br>
+      Subject line: <b style="color:var(--fg)">unsubscribe</b> — a human reads every message and confirms the removal.
+    </div>
+
+    <div class="addr">
+      Apex Data — Werbesolutions e.U. · Arbeitergasse 123 · 7022 Schattendorf · Austria<br>
+      <a href="https://apex-data.io">apex-data.io</a> ·
+      <a href="../datenschutz.html">Privacy</a> ·
+      <a href="../impressum.html">Imprint</a>
+    </div>
+  </div>
+</div>
+<script>
+function go(ev){
+  ev.preventDefault();
+  var e = (document.getElementById('e').value || '').trim();
+  if(!e) return false;
+  var subject = encodeURIComponent('unsubscribe');
+  var body = encodeURIComponent('Please unsubscribe ' + e + ' from all Apex Data / Werbesolutions lists.\n\nEmail: ' + e + '\n');
+  window.location.href = 'mailto:unsubscribe@apex-affiliates.com?subject=' + subject + '&body=' + body;
+  var btn = document.querySelector('button');
+  btn.textContent = 'Opening your mail app…';
+  setTimeout(function(){ btn.textContent = 'Unsubscribe me'; }, 3000);
+  return false;
+}
+</script>
+</body>
+</html>
