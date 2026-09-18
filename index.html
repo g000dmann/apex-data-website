@@ -62,24 +62,31 @@
           "offers": [
             {
               "@type": "Offer",
-              "name": "Titan Elite",
-              "price": "150",
+              "name": "Starter — One-Time",
+              "price": "290",
               "priceCurrency": "USD",
-              "description": "10 verified B2B leads"
+              "description": "10 SMTP-verified B2B leads, Google rating, live website defect audit, data quality score 0-100, exclusive, bounce guarantee"
             },
             {
               "@type": "Offer",
-              "name": "God-Mode",
-              "price": "500",
+              "name": "Growth — Monthly Subscription",
+              "price": "149",
               "priceCurrency": "USD",
-              "description": "50 enriched B2B leads with deep intel"
+              "description": "20 fresh verified B2B leads per month with competitor benchmark, cancel anytime"
             },
             {
               "@type": "Offer",
-              "name": "Apex Predator",
-              "price": "1000",
+              "name": "Professional — One-Time",
+              "price": "1250",
               "priceCurrency": "USD",
-              "description": "100 premium B2B leads, top 1% market"
+              "description": "50 SMTP-verified B2B leads, local competitor benchmark, multi-contact matrix, quality-score band, exclusive, bounce guarantee"
+            },
+            {
+              "@type": "Offer",
+              "name": "Enterprise — One-Time",
+              "price": "2200",
+              "priceCurrency": "USD",
+              "description": "100 verified B2B leads, full competitor set per city, quality-score band 80-100"
             }
           ]
         },
@@ -108,6 +115,22 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "No. Every batch is generated exclusively for the requesting client based on their geo-targets and niche. You will not compete with 50 other agencies emailing the same list."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if an email bounces?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every address is SMTP-verified before delivery. If one still hard-bounces, we replace it 1:1 free of charge — that is our bounce guarantee."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What exactly is the data quality score?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each lead is graded 0-100 from independently measured signals: SMTP email verification, Google rating and review count, Google Business completeness, and a live website defect audit for HTTPS, meta description, H1 and image alt text."
               }
             }
           ]
@@ -203,7 +226,7 @@
 
         /* Tiers Section */
         .tiers-wrapper { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
-        .tiers-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .tiers-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 30px; margin-top: 40px; }
         .tier-card { background: rgba(10,15,20,0.8); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 40px; position: relative; overflow: hidden; }
         .tier-card.featured { border-color: #00ff88; box-shadow: 0 0 30px rgba(0,255,136,0.1); transform: scale(1.02); }
         .tier-badge { position: absolute; top: 15px; right: 15px; background: #00ff88; color: #000; font-size: 0.7rem; font-weight: 800; padding: 4px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
@@ -283,7 +306,7 @@
         /* === TIERS (Preis + Buy-Button) === */
         .tiers-section {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 24px;
             margin-top: 50px;
         }
@@ -419,9 +442,9 @@
     <main id="main-content">
         <!-- HEADER / HERO -->
         <header>
-            <h1 data-i18n="h1_part1">Premium Intelligence for <span class="gradient-text" data-i18n="h1_gradient">High-Ticket Sales.</span></h1>
-            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// EXCLUSIVE B2B LEAD OPPORTUNITIES</p>
-            <p data-i18n="subtitle" class="subtitle">Stop wasting time on outdated lists. We provide your sales team with verified decision-makers, comprehensive business profiles, and the exact pain points you need to close the deal.</p>
+            <h1 id="hero-h1" data-i18n="h1_part1">Premium Intelligence for <span class="gradient-text" data-i18n="h1_gradient">High-Ticket Sales.</span></h1>
+            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// EXCLUSIVE B2B LEADS &mdash; SMTP-VERIFIED, AUDITED, SCORED 0&ndash;100</p>
+            <p data-i18n="subtitle" class="subtitle">Stop wasting time on outdated lists. Every lead ships with an SMTP-verified decision-maker email, the live-measured website defects on their domain, their real Google rating, their Google Business profile and the top 3 competitors in their city &mdash; scored 0&ndash;100 before you buy.</p>
         </header>
         
         <!-- STATS BAR -->
@@ -551,56 +574,139 @@
             </div>
         </section>
 
+        <!-- LEAD QUALITY (new: 6 verification signals) -->
+        <style>
+            .quality-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; max-width: 1100px; margin: 50px auto 0; padding: 0 20px; }
+            .quality-item { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 24px 22px; transition: border-color .2s ease, transform .2s ease; }
+            .quality-item:hover { border-color: rgba(0,255,136,0.35); transform: translateY(-2px); }
+            .quality-icon { font-size: 1.5rem; line-height: 1; margin-bottom: 12px; }
+            .quality-title { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; color: #00ff88; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+            .quality-desc { color: rgba(255,255,255,0.65); font-size: 0.88rem; line-height: 1.6; }
+            .quality-score { font-family: 'JetBrains Mono', monospace; color: #fff; font-weight: 700; }
+            .guarantee-bar { max-width: 1100px; margin: 28px auto 0; padding: 18px 24px; border: 1px dashed rgba(0,255,136,0.45); border-radius: 10px; background: rgba(0,255,136,0.04); display: flex; flex-wrap: wrap; gap: 10px 34px; justify-content: center; font-size: 0.9rem; color: rgba(255,255,255,0.85); }
+            .guarantee-bar strong { color: #00ff88; }
+        </style>
+
+        <section class="data-preview" id="lead-quality">
+            <h2 class="section-title">Every Lead Is Independently Verified</h2>
+            <p class="section-sub">Six quality checks run on every single record before it ships. No recycled lists, no scraped dumps, no dead inboxes.</p>
+
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="quality-icon">&#9993;</div>
+                    <div class="quality-title">SMTP-Verified Email</div>
+                    <div class="quality-desc">Each address is handshake-tested against the receiving mail server. We only ship addresses that accept mail &mdash; no catch-all guesswork.</div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">&#9733;</div>
+                    <div class="quality-title">Real Google Rating &amp; Review Count</div>
+                    <div class="quality-desc">The live Google rating and the exact number of reviews &mdash; your first sentence writes itself and proves you did your homework.</div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">&#9881;</div>
+                    <div class="quality-title">Measured Website Defects</div>
+                    <div class="quality-desc">Live-tested on every domain: missing HTTPS, missing meta description, missing H1, images without alt text. Measured, not estimated.</div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">&#128205;</div>
+                    <div class="quality-title">Google Business Data</div>
+                    <div class="quality-desc">Verified business profile with photos and opening hours &mdash; the fastest way to prove you actually looked at their business.</div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">&#128202;</div>
+                    <div class="quality-title">Local Competitor Benchmark</div>
+                    <div class="quality-desc">The top 3 competitors in their city, side by side. Use their position as the reason to talk, not a generic pitch.</div>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">&#127919;</div>
+                    <div class="quality-title">Data Quality Score <span class="quality-score">0&ndash;100</span></div>
+                    <div class="quality-desc">Every record is graded on a transparent 0&ndash;100 scale. Grade a full record, or start with what your budget covers.</div>
+                </div>
+            </div>
+        </section>
+
         <!-- TIERS SECTION -->
         <section class="tiers-wrapper">
             <h2 class="section-title">Lead Intelligence Tiers</h2>
-            <p class="section-sub">Not all leads are created equal. Our engine grades opportunities based on revenue potential.</p>
+            <p class="section-sub">Not all leads are created equal. Every record is graded 0&ndash;100 and sold exactly once.</p>
             
             <div class="tiers-section">
                 <div class="tier-card">
-                    <div class="tier-name">Titan Elite</div>
-                    <div class="tier-price">$150</div>
-                    <div class="tier-price-sub">10 verified leads</div>
-                    <div class="tier-desc">High-quality foundational leads for volume outreach. Perfect for standard cold email campaigns.</div>
+                    <div class="tier-name">Starter &mdash; One-Time</div>
+                    <div class="tier-price">$290</div>
+                    <div class="tier-price-sub">10 verified leads &middot; $29.00 per lead</div>
+                    <div class="tier-desc">One batch, one payment. Perfect to test our data quality on your own market before committing to volume.</div>
                     <ul class="tier-features">
-                        <li>Verified Decision Maker</li>
-                        <li>Personal Email Address</li>
-                        <li>Company HQ & Details</li>
-                        <li>Basic Tech Audit (CMS)</li>
+                        <li>SMTP-verified decision-maker email</li>
+                        <li>Real Google rating + review count</li>
+                        <li>Live website defect audit (HTTPS / meta / H1 / alt text)</li>
+                        <li>Google Business data (photos, hours)</li>
+                        <li>Data quality score 0&ndash;100</li>
+                        <li>Bounce guarantee (1:1 replacement)</li>
                     </ul>
-                    <a href="https://buy.stripe.com/6oU00kc5ddmz4gj7HA4F202" class="tier-buy-btn" target="_blank" rel="noopener">Buy 10 Leads — $150</a>
+                    <!-- One-time purchase (existing live Stripe link) -->
+                    <a href="https://buy.stripe.com/9B65kE0mvdmz7sv2ng4F20a" class="tier-buy-btn" target="_blank" rel="noopener" data-ab-cta="a-290">Buy 10 Leads &mdash; $290</a>
                 </div>
 
                 <div class="tier-card featured">
-                    <div class="tier-badge">MOST POPULAR</div>
-                    <div class="tier-name">God-Mode</div>
-                    <div class="tier-price">$500</div>
-                    <div class="tier-price-sub">50 enriched leads</div>
-                    <div class="tier-desc">Enriched profiles with deep technical vulnerabilities to fuel highly personalized outbound.</div>
+                    <div class="tier-badge">BEST VALUE</div>
+                    <div class="tier-name">Growth &mdash; Monthly Subscription</div>
+                    <div class="tier-price">$149<span style="font-size:1rem;font-weight:400;color:rgba(255,255,255,0.6)">/month</span></div>
+                    <div class="tier-price-sub">20 fresh leads per month &middot; $7.45 per lead</div>
+                    <div class="tier-desc">A fresh batch every month, generated against your target geo and niche. Cancel anytime.</div>
                     <ul class="tier-features">
-                        <li>Everything in Titan</li>
-                        <li>Active Ad Spend Signals</li>
-                        <li>ADA Compliance Risk Audit</li>
-                        <li>Custom AI Icebreaker Hook</li>
-                        <li>Direct Phone (When Available)</li>
+                        <li>20 new verified leads every month</li>
+                        <li>Everything in Starter, on autopilot</li>
+                        <li>Top-3 local competitor benchmark</li>
+                        <li>Refreshed defects + rating data each month</li>
+                        <li>Priority replacement of bounces</li>
+                        <li>Cancel anytime &mdash; no lock-in</li>
                     </ul>
-                    <a href="https://buy.stripe.com/00wbJ26KTeqD6ore5Y4F203" class="tier-buy-btn primary" target="_blank" rel="noopener">Buy 50 Leads — $500</a>
+                    <!-- ACHTUNG: fuer den Abo-Button existiert noch KEIN Stripe-Payment-Link.
+                         Stripe-Price ist vorhanden: price_1UGlMrKgVQDPSgZwDx0seijN ($149/Monat).
+                         Bis der Link existiert, zeigt der Button auf das Anfrageformular (#lead-request).
+                         Vor dem Livegang href ersetzen (siehe AB_TEST_ANLEITUNG.md, Abschnitt "Offene Punkte"). -->
+                    <a href="#lead-request" class="tier-buy-btn primary" target="_self" id="cta-tier-sub" data-ab-cta="a-sub">Start Subscription &mdash; $149/mo</a>
                 </div>
 
                 <div class="tier-card">
-                    <div class="tier-name">Apex Predator</div>
-                    <div class="tier-price">$1,000</div>
-                    <div class="tier-price-sub">100 premium leads</div>
-                    <div class="tier-desc">The absolute top 1% of the market. Massive operations with severe digital blindspots.</div>
+                    <div class="tier-name">Professional &mdash; One-Time</div>
+                    <div class="tier-price">$1,250</div>
+                    <div class="tier-price-sub">50 verified leads &middot; $25.00 per lead</div>
+                    <div class="tier-desc">The volume step-up: half of a full market run in a single batch, for agencies that already validated our data quality on a small sample.</div>
                     <ul class="tier-features">
-                        <li>Everything in God-Mode</li>
-                        <li>Multi-Contact Matrix (CEO + Marketing)</li>
-                        <li>Guaranteed Direct Cell Phone</li>
-                        <li>Enterprise IT Infrastructure Leak</li>
-                        <li>Highest Commission Potential</li>
+                        <li>Everything in Starter, 50 leads at once</li>
+                        <li>Top-3 local competitor benchmark per city</li>
+                        <li>Multi-contact matrix (owner + marketing)</li>
+                        <li>Refreshed rating + defect data</li>
+                        <li>Data quality score 0&ndash;100</li>
+                        <li>Bounce guarantee (1:1 replacement)</li>
                     </ul>
-                    <a href="https://buy.stripe.com/aFa6oI3yH0zNdQTbXQ4F204" class="tier-buy-btn" target="_blank" rel="noopener">Buy 100 Leads — $1,000</a>
+                    <!-- One-time purchase (live Stripe Payment Link, LIVE) -->
+                    <a href="https://buy.stripe.com/8x2bJ2fhp6Yb5kn9PI4F20b" class="tier-buy-btn" target="_blank" rel="noopener" data-ab-cta="a-pro">Buy 50 Leads &mdash; $1,250</a>
                 </div>
+
+                <div class="tier-card">
+                    <div class="tier-name">Enterprise &mdash; One-Time</div>
+                    <div class="tier-price">$2,200</div>
+                    <div class="tier-price-sub">100 verified leads &middot; $22.00 per lead</div>
+                    <div class="tier-desc">Full market coverage for agencies and multi-city operations that need volume with the same verification depth.</div>
+                    <ul class="tier-features">
+                        <li>Everything in Growth, 100 leads at once</li>
+                        <li>Multi-contact matrix (owner + marketing)</li>
+                        <li>Full competitor set per city, not just top 3</li>
+                        <li>Highest quality-score band only (80&ndash;100)</li>
+                        <li>Dedicated delivery format for your CRM</li>
+                        <li>Bounce guarantee (1:1 replacement)</li>
+                    </ul>
+                    <!-- One-time purchase (live Stripe Payment Link, LIVE) -->
+                    <a href="https://buy.stripe.com/4gMeVe8T11DR3cf0f84F20c" class="tier-buy-btn" target="_blank" rel="noopener" data-ab-cta="a-ent">Buy 100 Leads &mdash; $2,200</a>
+                </div>
+            </div>
+
+            <div class="guarantee-bar">
+                <span><strong>Exclusive leads</strong> &mdash; every record is sold once and never resold to another agency.</span>
+                <span><strong>Bounce guarantee</strong> &mdash; any hard-bounced address is replaced 1:1, free of charge.</span>
             </div>
         </section>
 
@@ -661,10 +767,18 @@
                 <div class="faq-question">Do you sell the same list to my competitors?</div>
                 <div class="faq-answer">No. Every batch we engineer is exclusively generated for the client who requested it based on their specific geo-targets and niche requirements. You won't be competing with 50 other agencies emailing the same list.</div>
             </div>
+            <div class="faq-item">
+                <div class="faq-question">What happens if an email bounces?</div>
+                <div class="faq-answer">Every address is SMTP-verified before delivery, so hard bounces are rare. If one still bounces, send us the address and we replace it 1:1 free of charge &mdash; that is our bounce guarantee. No ticket ping-pong, no extra invoice.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What exactly is the data quality score?</div>
+                <div class="faq-answer">Each lead is graded 0&ndash;100 from independently measured signals: email verification, Google rating and review count, Google Business completeness, and the live website defect audit (HTTPS, meta description, H1, alt text). You see the score before you buy.</div>
+            </div>
         </section>
 
         <!-- CTA & FORM -->
-        <div class="cta-section">
+        <div class="cta-section" id="lead-request">
             <h2 class="section-title" style="margin-bottom: 40px;">Ready to dominate your market?</h2>
             <div class="form-container">
                 <form id="contact-form" action="mailto:kevin@apex-affiliates.com" method="POST" enctype="text/plain">
@@ -676,7 +790,7 @@
                         <input data-i18n="placeholder_location" id="f_location" type="text" name="location" placeholder="Target US State / City" required>
                         <input data-i18n="placeholder_email" id="f_email" type="email" name="email" placeholder="Your Business Email" required>
                     </div>
-                    <button data-i18n="button_request" type="submit" class="cta-button" onclick="event.preventDefault(); var s='Apex Data Inquiry'; var b='Company: '+encodeURIComponent(document.getElementById('f_company').value)+'\nNiche: '+encodeURIComponent(document.getElementById('f_niche').value)+'\nLocation: '+encodeURIComponent(document.getElementById('f_location').value)+'\nEmail: '+encodeURIComponent(document.getElementById('f_email').value); window.location.href='mailto:kevin@apex-affiliates.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);">Request Premium Lead Batch</button>
+                    <button id="cta-primary" data-ab-cta="a-form" data-i18n="button_request" type="submit" class="cta-button" onclick="event.preventDefault(); var s='Apex Data Inquiry'; var b='Company: '+encodeURIComponent(document.getElementById('f_company').value)+'\nNiche: '+encodeURIComponent(document.getElementById('f_niche').value)+'\nLocation: '+encodeURIComponent(document.getElementById('f_location').value)+'\nEmail: '+encodeURIComponent(document.getElementById('f_email').value)+'\nAB-Variante: '+(window.apexAB?window.apexAB.variant:'-'); window.location.href='mailto:kevin@apex-affiliates.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);">Request Premium Lead Batch</button>
                 </form>
             </div>
             <p class="cta-sub">Strict capacity limits apply. Prioritizing long-term data partnerships.</p>
@@ -762,5 +876,18 @@
             // Hier kommt ggf. deine i18n-Logik hin
         }
     </script>
+
+    <!-- ================= A/B TEST (lokal, DSGVO-freundlich) =================
+         Erzwingen ueber ?v=a / ?v=b, Zaehler ansehen mit ?ab_debug=1.
+         Optionales erst-Partei-Logging aktivieren: endpoint setzen.
+         Doku: AB_TEST_ANLEITUNG.md / HOMEPAGE_UPDATE.md
+         ====================================================================== -->
+    <script>
+        window.APEX_AB_CONFIG = {
+            endpoint: '',      // '' = kein Netzwerk (nur Browser-Zaehler). Fuer Logfile: 'http://127.0.0.1:8899/ab/collect'
+            sticky: true       // true = Variante pro Browser merken (nur der Buchstabe "a"/"b")
+        };
+    </script>
+    <script src="ab-test.js" defer></script>
 </body>
 </html>
