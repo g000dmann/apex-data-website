@@ -1,6 +1,6 @@
 {
  "tool": "report_pages_build.py",
- "generated": "2026-09-23 14:03 UTC",
+ "generated": "2026-09-23 14:27 UTC",
  "pages": [
   {
    "domain": "advocate-construction.com",
@@ -78,7 +78,7 @@
    "checks_total": 6,
    "reliable": true,
    "measured": "2026-09-21",
-   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+   "pdf": "vorhandenes Audit-PDF kopiert"
   },
   {
    "domain": "ramconroofing.com",
@@ -124,7 +124,7 @@
   "advocate-construction.com": {
    "quelle": "<home>/apex/live_check_20260921/advocate-construction_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 72677,
+   "bytes": 72678,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -132,9 +132,9 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 7196,
-    "bytes": 72677
+    "bytes": 72678
    },
-   "sha256": "e060ab40ea77553fb885ce440d9d3507991c2f8d83d18e87f3580f80122a19fe",
+   "sha256": "9404d92a605d1feb31edaa922c05da257c01e5676b9aef7db60cd35a5f769b48",
    "email_adressen_im_textlayer": []
   },
   "apcroofing.com": {
@@ -150,13 +150,13 @@
     "textlayer_zeichen": 3580,
     "bytes": 64666
    },
-   "sha256": "99055ccb69d5a9790e48ba499a7b3ae4ca868caa5cdcdc0cb59ab6c35dd1927e",
+   "sha256": "5f5e8689f5aee09e9706ea2f96366b235e230b7ddb735032acd8bb2f2bf8f59e",
    "email_adressen_im_textlayer": []
   },
   "coxres.com": {
    "quelle": "<home>/apex/live_check_20260921/coxres_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 78111,
+   "bytes": 78110,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -164,9 +164,9 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 6877,
-    "bytes": 78111
+    "bytes": 78110
    },
-   "sha256": "57a16d769dcd2ae8e85befe1ad2326d8f169661208ec6de95283d2fa326041f5",
+   "sha256": "884e076c668bf4f0012597d688b40dde9fea38f70f465a5ba9f847e64c182e7f",
    "email_adressen_im_textlayer": []
   },
   "craddockroofing.com": {
@@ -182,13 +182,13 @@
     "textlayer_zeichen": 3662,
     "bytes": 66238
    },
-   "sha256": "80396e6e43a7431a922330d391e911ffacbc3ed6daa7c3908414608e1ff45643",
+   "sha256": "41b5485fa36fe3f0f0a7d02f4e70b3a3950ecc317abb2f03a8a360fa2fa35955",
    "email_adressen_im_textlayer": []
   },
   "houstonroofingexperts.com": {
    "quelle": "<home>/apex/live_check_20260921/houstonroofingexperts_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 69950,
+   "bytes": 69951,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -196,31 +196,21 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 5172,
-    "bytes": 69950
+    "bytes": 69951
    },
-   "sha256": "9858566450306f94478efe86a65f0f0be218ec22724d5a6222a5c1f43b7a51e5",
+   "sha256": "e95de1df26668a7b1898cd784573d48416de697050bd0fd0ce66d28c853030ae",
    "email_adressen_im_textlayer": []
   },
   "mysunliferoofing.com": {
-   "quelle": "<home>/apex/live_check_20260921/mysunliferoofing_com_audit.json",
-   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 88698,
-   "pdf_qa": {
-    "ok": true,
-    "variant": "a-2b",
-    "gts_pdfa1": true,
-    "problems": [],
-    "seiten": 4,
-    "textlayer_zeichen": 9746,
-    "bytes": 88698
-   },
-   "sha256": "35755b22739eb9b454f16c9cfa1ac4f306ba627e127eb40da3aa4de77e2e3059",
+   "quelle": "<home>/apex/audit_products/mysunliferoofing_com_audit.pdf",
+   "weg": "vorhandenes Audit-PDF kopiert",
+   "sha256": "87f5e3b1d8d5b1b3de714f0e646c2d9ca981b15030d221e0a9d43705374b0cea",
    "email_adressen_im_textlayer": []
   },
   "ramconroofing.com": {
    "quelle": "<home>/apex/live_check_20260921/ramconroofing_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 71696,
+   "bytes": 71693,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -228,9 +218,9 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 5488,
-    "bytes": 71696
+    "bytes": 71693
    },
-   "sha256": "c8a15c4aa126279be7d0b98f0317252299628711142834386a133983d8d85eac",
+   "sha256": "df480b6833ea3ef72f99f096eb9ec8670b52374f8f79cf7decec6340573eda59",
    "email_adressen_im_textlayer": []
   },
   "rencoroofing.com": {
@@ -246,13 +236,13 @@
     "textlayer_zeichen": 8239,
     "bytes": 79147
    },
-   "sha256": "bf91bce112f1ec47c10ac8a5063e6b2be88b18a36c91ff9b9a2f6d7f59cfb6c8",
+   "sha256": "4190168c1ca6f2fe4e78784263023bdd4b8f5165e7d89207e132021eb026f8bc",
    "email_adressen_im_textlayer": []
   },
   "waltonresidentialservices.com": {
    "quelle": "<home>/apex/live_check_20260921/waltonresidentialservices_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 77891,
+   "bytes": 77886,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -260,9 +250,9 @@
     "problems": [],
     "seiten": 4,
     "textlayer_zeichen": 8798,
-    "bytes": 77891
+    "bytes": 77886
    },
-   "sha256": "66b97a3a70772ebb79d44d737588ecbe5568f0423c53096160308c9859be4c8c",
+   "sha256": "3270cb4ca40796ada1f41c1fa448e0ff18756ef3ad87af836b7d976664f94d1e",
    "email_adressen_im_textlayer": []
   }
  },
