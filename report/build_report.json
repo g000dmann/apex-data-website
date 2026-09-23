@@ -1,12 +1,12 @@
 {
  "tool": "report_pages_build.py",
- "generated": "2026-09-23 08:24 UTC",
+ "generated": "2026-09-23 08:36 UTC",
  "pages": [
   {
    "domain": "advocate-construction.com",
    "company": "Advocate Construction",
    "path": "<home>/apex/report_pages/advocate-construction.com/index.html",
-   "bytes": 8052,
+   "bytes": 7560,
    "score": 100,
    "grade": "GOOD",
    "checks_failed": 0,
@@ -19,7 +19,7 @@
    "domain": "apcroofing.com",
    "company": "APC Roofing",
    "path": "<home>/apex/report_pages/apcroofing.com/index.html",
-   "bytes": 7983,
+   "bytes": 7492,
    "score": 83,
    "grade": "NEEDS WORK",
    "checks_failed": 1,
@@ -32,7 +32,7 @@
    "domain": "coxres.com",
    "company": "Cox Roofing",
    "path": "<home>/apex/report_pages/coxres.com/index.html",
-   "bytes": 8673,
+   "bytes": 8182,
    "score": 50,
    "grade": "NEEDS WORK",
    "checks_failed": 3,
@@ -45,7 +45,7 @@
    "domain": "craddockroofing.com",
    "company": "Craddock Roofing",
    "path": "<home>/apex/report_pages/craddockroofing.com/index.html",
-   "bytes": 7840,
+   "bytes": 7349,
    "score": 83,
    "grade": "NEEDS WORK",
    "checks_failed": 1,
@@ -58,7 +58,7 @@
    "domain": "houstonroofingexperts.com",
    "company": "Houston Roofing Experts",
    "path": "<home>/apex/report_pages/houstonroofingexperts.com/index.html",
-   "bytes": 7965,
+   "bytes": 7473,
    "score": 100,
    "grade": "GOOD",
    "checks_failed": 0,
@@ -71,7 +71,7 @@
    "domain": "mysunliferoofing.com",
    "company": "Sun Life Roofing",
    "path": "<home>/apex/report_pages/mysunliferoofing.com/index.html",
-   "bytes": 9361,
+   "bytes": 8870,
    "score": 33,
    "grade": "POOR",
    "checks_failed": 4,
@@ -84,7 +84,7 @@
    "domain": "ramconroofing.com",
    "company": "RAMCON Roofing",
    "path": "<home>/apex/report_pages/ramconroofing.com/index.html",
-   "bytes": 8086,
+   "bytes": 7595,
    "score": 83,
    "grade": "NEEDS WORK",
    "checks_failed": 1,
@@ -97,7 +97,7 @@
    "domain": "rencoroofing.com",
    "company": "RENCO Roofing",
    "path": "<home>/apex/report_pages/rencoroofing.com/index.html",
-   "bytes": 9079,
+   "bytes": 8588,
    "score": 50,
    "grade": "NEEDS WORK",
    "checks_failed": 3,
@@ -110,7 +110,7 @@
    "domain": "waltonresidentialservices.com",
    "company": "Walton Residential Services",
    "path": "<home>/apex/report_pages/waltonresidentialservices.com/index.html",
-   "bytes": 8499,
+   "bytes": 8008,
    "score": 83,
    "grade": "NEEDS WORK",
    "checks_failed": 1,
@@ -124,7 +124,7 @@
   "advocate-construction.com": {
    "quelle": "<home>/apex/live_check_20260921/advocate-construction_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 39505,
+   "bytes": 39503,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -132,9 +132,9 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 7196,
-    "bytes": 39505
+    "bytes": 39503
    },
-   "sha256": "27c3fb8dfb152de38e995320e54757375712edc2faef171e9337cf8e87a4e459",
+   "sha256": "8c6f8b5970fdbef93d8dd5577633e4dc58aadca6b43241c1e9996e6e165f8459",
    "email_adressen_im_textlayer": []
   },
   "apcroofing.com": {
@@ -150,13 +150,13 @@
     "textlayer_zeichen": 3580,
     "bytes": 31409
    },
-   "sha256": "e811de0201ecc8b8759a6f8beca24797d34f6ba2f5f60360bf31c1d7c598cb57",
+   "sha256": "8cf81deb6a391b4f528ec51df4bd340d4f47267d59251986f0d000e493487154",
    "email_adressen_im_textlayer": []
   },
   "coxres.com": {
    "quelle": "<home>/apex/live_check_20260921/coxres_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 44833,
+   "bytes": 44834,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -164,9 +164,9 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 6877,
-    "bytes": 44833
+    "bytes": 44834
    },
-   "sha256": "fbefa9ca2714a3df16518d4cb10176468c80490a12f9baf8b528b91890ea4670",
+   "sha256": "59e8063619357c0987513366a663f54e8ab51ce9a4c2a888002475056c73687d",
    "email_adressen_im_textlayer": []
   },
   "craddockroofing.com": {
@@ -182,7 +182,7 @@
     "textlayer_zeichen": 3662,
     "bytes": 33063
    },
-   "sha256": "28e7f1e09ba0029d09a77af9bba4606cdb77272bb04b2c4b460e1903c448169b",
+   "sha256": "de8b77ca9cbcad229843821adff10110f27bd983a471e13801bc3d43a3a48540",
    "email_adressen_im_textlayer": []
   },
   "houstonroofingexperts.com": {
@@ -198,19 +198,19 @@
     "textlayer_zeichen": 5172,
     "bytes": 36461
    },
-   "sha256": "5cc7e0da9c9600f3446f891ccda0ecbd289414c5eda02f52ac173b52756bdd78",
+   "sha256": "7e75cfad164833bfe2d0b8eafd719bccc866397d80d94f56f0540fb978b7235a",
    "email_adressen_im_textlayer": []
   },
   "mysunliferoofing.com": {
    "quelle": "<home>/apex/audit_products/mysunliferoofing_com_audit.pdf",
    "weg": "vorhandenes Audit-PDF kopiert",
-   "sha256": "692f95f91ed2626002c3ba56af00671c6c8199126b21aa21e4853565a2e17389",
+   "sha256": "87f5e3b1d8d5b1b3de714f0e646c2d9ca981b15030d221e0a9d43705374b0cea",
    "email_adressen_im_textlayer": []
   },
   "ramconroofing.com": {
    "quelle": "<home>/apex/live_check_20260921/ramconroofing_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 38379,
+   "bytes": 38375,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -218,9 +218,9 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 5488,
-    "bytes": 38379
+    "bytes": 38375
    },
-   "sha256": "d27a86afeed670377e43ba953a190a68053b5e1e7d4113b038bf8a1d9aa9f793",
+   "sha256": "ca6c67c97689a7b27933c444aa185e03e56158a092b5ef17a94c5dbe69ddc360",
    "email_adressen_im_textlayer": []
   },
   "rencoroofing.com": {
@@ -236,13 +236,13 @@
     "textlayer_zeichen": 8239,
     "bytes": 46079
    },
-   "sha256": "c9171be2b842fa39697314672c44606ac830112b21c109f9687e30b693f6beba",
+   "sha256": "7839d6a2cd9b061d76ff2eaeb8a00eea31316d3f694c99ee9e5ee9e9c63e6f92",
    "email_adressen_im_textlayer": []
   },
   "waltonresidentialservices.com": {
    "quelle": "<home>/apex/live_check_20260921/waltonresidentialservices_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 44654,
+   "bytes": 44655,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -250,9 +250,9 @@
     "problems": [],
     "seiten": 4,
     "textlayer_zeichen": 8798,
-    "bytes": 44654
+    "bytes": 44655
    },
-   "sha256": "e91dbcf67fa24d626c3889344dacfec2578ca94d1b2e695dc0174306562a3bb9",
+   "sha256": "09e7b45c06a5f186154f24a37286afd4465641afc0e0db1a3b7ef511e3ab667a",
    "email_adressen_im_textlayer": []
   }
  },
