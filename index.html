@@ -65,7 +65,7 @@
               "name": "Starter — One-Time",
               "price": "290",
               "priceCurrency": "USD",
-              "description": "10 SMTP-verified B2B leads, Google rating, live website defect audit, data quality score 0-100, exclusive, bounce guarantee"
+              "description": "10 screened B2B leads with a per-record email-verification status, Google rating and review count, data quality score 0-100, exclusive, 1:1 bounce guarantee"
             },
             {
               "@type": "Offer",
@@ -79,7 +79,7 @@
               "name": "Professional — One-Time",
               "price": "1250",
               "priceCurrency": "USD",
-              "description": "50 SMTP-verified B2B leads, local competitor benchmark, multi-contact matrix, quality-score band, exclusive, bounce guarantee"
+              "description": "50 screened B2B leads with a per-record email-verification status, multi-contact records, quality-score band, exclusive, 1:1 bounce guarantee"
             },
             {
               "@type": "Offer",
@@ -106,7 +106,7 @@
               "name": "How fresh is the data?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Every batch is generated on-demand from the live web. No static database, no decay. Maximum deliverability because the data is hours old, not years."
+                "text": "Every batch is drawn from our own lead database and re-screened against our suppression and bounce lists right before delivery. Each record carries its email-verification status, so you see exactly what was checked."
               }
             },
             {
@@ -122,7 +122,7 @@
               "name": "What happens if an email bounces?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Every address is SMTP-verified before delivery. If one still hard-bounces, we replace it 1:1 free of charge — that is our bounce guarantee."
+                "text": "Every address is syntax- and domain-checked (DNS/MX) and screened against our suppression and bounce lists before delivery, and each record ships with its verification status. If one still hard-bounces, we replace it 1:1 free of charge — that is our bounce guarantee."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "What exactly is the data quality score?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Each lead is graded 0-100 from independently measured signals: SMTP email verification, Google rating and review count, Google Business completeness, and a live website defect audit for HTTPS, meta description, H1 and image alt text."
+                "text": "Each lead is graded 0-100 from signals we really measured: the email-verification status (syntax plus DNS/MX check of the domain), the Google rating and review count, and the website signals we captured on the domain."
               }
             }
           ]
@@ -443,23 +443,23 @@
         <!-- HEADER / HERO -->
         <header>
             <h1 id="hero-h1" data-i18n="h1_part1">Premium Intelligence for <span class="gradient-text" data-i18n="h1_gradient">High-Ticket Sales.</span></h1>
-            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// EXCLUSIVE B2B LEADS &mdash; SMTP-VERIFIED, AUDITED, SCORED 0&ndash;100</p>
-            <p data-i18n="subtitle" class="subtitle">Stop wasting time on outdated lists. Every lead ships with an SMTP-verified decision-maker email, the live-measured website defects on their domain, their real Google rating, their Google Business profile and the top 3 competitors in their city &mdash; scored 0&ndash;100 before you buy.</p>
+            <p data-i18n="compliance" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #aaa; margin-bottom: 20px; letter-spacing: 1px;">// EXCLUSIVE B2B LEADS &mdash; SCREENED, LABELED, SCORED 0&ndash;100</p>
+            <p data-i18n="subtitle" class="subtitle">Stop wasting time on outdated lists. Every lead ships with a decision-maker contact email plus its verification status, the real Google rating and review count, the company website and the city it operates in &mdash; scored 0&ndash;100 before you buy.</p>
         </header>
         
         <!-- STATS BAR -->
         <div class="stats-bar">
             <div class="stat-item">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">Email Deliverability</div>
+                <div class="stat-number">1:1</div>
+                <div class="stat-label">Free Bounce Replacement</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">100%</div>
                 <div class="stat-label">100% Public-Source B2B</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">Zero</div>
-                <div class="stat-label">Generic Info@ Emails</div>
+                <div class="stat-number">0&ndash;100</div>
+                <div class="stat-label">Quality Score per Record</div>
             </div>
         </div>
 
@@ -490,16 +490,16 @@
             <div class="data-grid">
                 <div class="data-tag premium" onclick="openModal(this)" 
                      data-title="Verified CEO/Owner Email" 
-                     data-desc="We bypass the gatekeepers completely. You get the direct, SMTP-verified email address of the ultimate decision-maker." 
-                     data-usecase="Pitch: Go straight to the person holding the credit card. No 'info@' black holes.">
+                     data-desc="Every record names the contact we actually hold and states the email-verification status, so you see what you are working with before you send." 
+                     data-usecase="Pitch: Go straight to the contact we hold &mdash; the named owner where our research found one, the verified role mailbox otherwise; the status on each record tells you which.">
                      Verified CEO/Owner Email
                 </div>
                 
                 <div class="data-tag premium" onclick="openModal(this)" 
-                     data-title="Direct Cell Phone (Mobile)" 
-                     data-desc="Skip the front desk. We extract SMS-ready mobile numbers so your sales team can dial direct." 
-                     data-usecase="Pitch: Perfect for high-converting cold calls and automated SMS follow-ups.">
-                     Direct Cell Phone (Mobile)
+                     data-title="Real Google Rating &amp; Review Count" 
+                     data-desc="The rating and the number of reviews we read from their Google Business profile &mdash; your opening line writes itself." 
+                     data-usecase="Pitch: 'I saw your 4.6 stars with 120 reviews &mdash; strong base, your website is what costs you the rest.'">
+                     Real Google Rating &amp; Review Count
                 </div>
                 
                 <div class="data-tag" onclick="openModal(this)" 
@@ -589,13 +589,13 @@
 
         <section class="data-preview" id="lead-quality">
             <h2 class="section-title">Every Lead Is Independently Verified</h2>
-            <p class="section-sub">Six quality checks run on every single record before it ships. No recycled lists, no scraped dumps, no dead inboxes.</p>
+            <p class="section-sub">Six quality checks run on every single record before it ships. No recycled third-party lists, no purchased dumps &mdash; and every record states its email-verification status.</p>
 
             <div class="quality-grid">
                 <div class="quality-item">
                     <div class="quality-icon">&#9993;</div>
-                    <div class="quality-title">SMTP-Verified Email</div>
-                    <div class="quality-desc">Each address is handshake-tested against the receiving mail server. We only ship addresses that accept mail &mdash; no catch-all guesswork.</div>
+                    <div class="quality-title">Syntax- &amp; Domain-Checked Email</div>
+                    <div class="quality-desc">Every address is syntax-checked and its domain verified by DNS (MX lookup), then screened against our suppression and bounce lists. The result is printed on the record as its email-verification status &mdash; no promise we cannot show you.</div>
                 </div>
                 <div class="quality-item">
                     <div class="quality-icon">&#9733;</div>
@@ -638,7 +638,7 @@
                     <div class="tier-price-sub">10 verified leads &middot; $29.00 per lead</div>
                     <div class="tier-desc">One batch, one payment. Perfect to test our data quality on your own market before committing to volume.</div>
                     <ul class="tier-features">
-                        <li>SMTP-verified decision-maker email</li>
+                        <li>Screened contact email incl. verification status</li>
                         <li>Real Google rating + review count</li>
                         <li>Live website defect audit (HTTPS / meta / H1 / alt text)</li>
                         <li>Google Business data (photos, hours)</li>
@@ -733,8 +733,8 @@
                 </div>
                 <div class="trust-item">
                     <div class="trust-icon">⚡</div>
-                    <div class="trust-label">Real-Time Data Generation</div>
-                    <div class="trust-desc">Every batch is generated on-demand from live sources — hours old, not years. Zero decay, maximum deliverability.</div>
+                    <div class="trust-label">Screened Before Delivery</div>
+                    <div class="trust-desc">Every batch is screened against our suppression list and the current bounce list right before it ships — and every record states its email-verification status.</div>
                 </div>
                 <div class="trust-item">
                     <div class="trust-icon">💳</div>
@@ -765,7 +765,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">How fresh is the data?</div>
-                <div class="faq-answer">Our lists are generated entirely on-demand. When you request a batch, our engine scans the live web in real-time, ensuring zero decay and maximum deliverability.</div>
+                <div class="faq-answer">Every batch is drawn from our own lead database and re-screened against our suppression and bounce lists right before delivery. Each record carries its email-verification status, so you see exactly what was checked &mdash; no recycled third-party list.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">Do you sell the same list to my competitors?</div>
@@ -773,11 +773,11 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">What happens if an email bounces?</div>
-                <div class="faq-answer">Every address is SMTP-verified before delivery, so hard bounces are rare. If one still bounces, send us the address and we replace it 1:1 free of charge &mdash; that is our bounce guarantee. No ticket ping-pong, no extra invoice.</div>
+                <div class="faq-answer">Every address is syntax- and domain-checked (DNS/MX) and screened against our suppression and bounce lists before delivery, and every record ships with its verification status. If one still hard-bounces, send us the address and we replace it 1:1 free of charge &mdash; that is our bounce guarantee. No ticket ping-pong, no extra invoice.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">What exactly is the data quality score?</div>
-                <div class="faq-answer">Each lead is graded 0&ndash;100 from independently measured signals: email verification, Google rating and review count, Google Business completeness, and the live website defect audit (HTTPS, meta description, H1, alt text). You see the score before you buy.</div>
+                <div class="faq-answer">Each lead is graded 0&ndash;100 from signals we really measured: the email-verification status (syntax plus DNS/MX check of the domain), the Google rating and review count, and the website signals we captured on the domain. You see the score before you buy.</div>
             </div>
         </section>
 
