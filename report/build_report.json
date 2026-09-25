@@ -1,6 +1,6 @@
 {
  "tool": "report_pages_build.py",
- "generated": "2026-09-23 14:27 UTC",
+ "generated": "2026-09-25 06:14 UTC",
  "pages": [
   {
    "domain": "advocate-construction.com",
@@ -26,6 +26,45 @@
    "checks_total": 6,
    "reliable": true,
    "measured": "2026-09-21",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "btolroofing.com",
+   "company": "Built To Last Roofing",
+   "path": "<home>/apex/report_pages/btolroofing.com/index.html",
+   "bytes": 8329,
+   "score": 67,
+   "grade": "NEEDS WORK",
+   "checks_failed": 2,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "castleroofing.us",
+   "company": "Castle Roofing Atlanta, GA",
+   "path": "<home>/apex/report_pages/castleroofing.us/index.html",
+   "bytes": 7797,
+   "score": 83,
+   "grade": "NEEDS WORK",
+   "checks_failed": 1,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "coloradosuperiorroofing.com",
+   "company": "Colorado Superior Roofing & Exteriors",
+   "path": "<home>/apex/report_pages/coloradosuperiorroofing.com/index.html",
+   "bytes": 8730,
+   "score": 67,
+   "grade": "NEEDS WORK",
+   "checks_failed": 2,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
    "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
   },
   {
@@ -55,6 +94,32 @@
    "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
   },
   {
+   "domain": "denverroofingworks.com",
+   "company": "Denver Roofing Works",
+   "path": "<home>/apex/report_pages/denverroofingworks.com/index.html",
+   "bytes": 8983,
+   "score": 50,
+   "grade": "NEEDS WORK",
+   "checks_failed": 3,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "houstoncommercialroofingconstruction.com",
+   "company": "Houston Commercial Roofing and Coatings",
+   "path": "<home>/apex/report_pages/houstoncommercialroofingconstruction.com/index.html",
+   "bytes": 8027,
+   "score": 83,
+   "grade": "NEEDS WORK",
+   "checks_failed": 1,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
    "domain": "houstonroofingexperts.com",
    "company": "Houston Roofing Experts",
    "path": "<home>/apex/report_pages/houstonroofingexperts.com/index.html",
@@ -65,6 +130,45 @@
    "checks_total": 6,
    "reliable": true,
    "measured": "2026-09-21",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "kpostcompany.com",
+   "company": "KPost Roofing & Waterproofing",
+   "path": "<home>/apex/report_pages/kpostcompany.com/index.html",
+   "bytes": 7596,
+   "score": 83,
+   "grade": "NEEDS WORK",
+   "checks_failed": 1,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "lonsmith.com",
+   "company": "Lon Smith Roofing",
+   "path": "<home>/apex/report_pages/lonsmith.com/index.html",
+   "bytes": 8427,
+   "score": 67,
+   "grade": "NEEDS WORK",
+   "checks_failed": 2,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
+   "domain": "monarch-roofing.com",
+   "company": "Monarch Roofing Houston",
+   "path": "<home>/apex/report_pages/monarch-roofing.com/index.html",
+   "bytes": 8781,
+   "score": 67,
+   "grade": "NEEDS WORK",
+   "checks_failed": 2,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
    "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
   },
   {
@@ -79,6 +183,19 @@
    "reliable": true,
    "measured": "2026-09-21",
    "pdf": "vorhandenes Audit-PDF kopiert"
+  },
+  {
+   "domain": "phoenixroofingandrepair.com",
+   "company": "Phoenix Roofing & Repair",
+   "path": "<home>/apex/report_pages/phoenixroofingandrepair.com/index.html",
+   "bytes": 8351,
+   "score": 67,
+   "grade": "NEEDS WORK",
+   "checks_failed": 2,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
   },
   {
    "domain": "ramconroofing.com",
@@ -107,6 +224,19 @@
    "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
   },
   {
+   "domain": "robinsonroofing.site",
+   "company": "Robinson Brothers Roofing & Construction",
+   "path": "<home>/apex/report_pages/robinsonroofing.site/index.html",
+   "bytes": 7774,
+   "score": 83,
+   "grade": "NEEDS WORK",
+   "checks_failed": 1,
+   "checks_total": 6,
+   "reliable": true,
+   "measured": "2026-09-25",
+   "pdf": "aus Mess-JSON gerendert (keine Neu-Messung)"
+  },
+  {
    "domain": "waltonresidentialservices.com",
    "company": "Walton Residential Services",
    "path": "<home>/apex/report_pages/waltonresidentialservices.com/index.html",
@@ -122,9 +252,9 @@
  ],
  "pdfs": {
   "advocate-construction.com": {
-   "quelle": "<home>/apex/live_check_20260921/advocate-construction_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/advocate-construction_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 72678,
+   "bytes": 72676,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -132,15 +262,15 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 7196,
-    "bytes": 72678
+    "bytes": 72676
    },
-   "sha256": "9404d92a605d1feb31edaa922c05da257c01e5676b9aef7db60cd35a5f769b48",
+   "sha256": "9f4a3bc1911ae09fba34ba3d87ac7b26332c1067ad7f402f4134da4e8c38bdb0",
    "email_adressen_im_textlayer": []
   },
   "apcroofing.com": {
-   "quelle": "<home>/apex/live_check_20260921/apcroofing_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/apcroofing_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 64666,
+   "bytes": 64665,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -148,15 +278,63 @@
     "problems": [],
     "seiten": 2,
     "textlayer_zeichen": 3580,
-    "bytes": 64666
+    "bytes": 64665
    },
-   "sha256": "5f5e8689f5aee09e9706ea2f96366b235e230b7ddb735032acd8bb2f2bf8f59e",
+   "sha256": "c715e06c8f653623a8e633da40a671a83c73825d8a6b17c98d46a5e48c0f294e",
+   "email_adressen_im_textlayer": []
+  },
+  "btolroofing.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/btolroofing_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 76369,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 3,
+    "textlayer_zeichen": 6846,
+    "bytes": 76369
+   },
+   "sha256": "1be014cbdae555478f888136b0f33622823809bb8bdc01386a6b42c82a2e10df",
+   "email_adressen_im_textlayer": []
+  },
+  "castleroofing.us": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/castleroofing_us_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 70494,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 3,
+    "textlayer_zeichen": 5204,
+    "bytes": 70494
+   },
+   "sha256": "b945ae9df31b87e50c3e1fcb5cb444b440d77356bf622e51ded230047b92c2b5",
+   "email_adressen_im_textlayer": []
+  },
+  "coloradosuperiorroofing.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/coloradosuperiorroofing_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 84293,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 4,
+    "textlayer_zeichen": 10259,
+    "bytes": 84293
+   },
+   "sha256": "c6a3f123c46f6aa61891b6d62d3db65d54e84a7d5de9b57ded49f37750f3fd59",
    "email_adressen_im_textlayer": []
   },
   "coxres.com": {
-   "quelle": "<home>/apex/live_check_20260921/coxres_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/coxres_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 78110,
+   "bytes": 78107,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -164,15 +342,15 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 6877,
-    "bytes": 78110
+    "bytes": 78107
    },
-   "sha256": "884e076c668bf4f0012597d688b40dde9fea38f70f465a5ba9f847e64c182e7f",
+   "sha256": "2a4c160fc0cf2b6da3fc966cb57305146b017e863efa5fdfea126cb40f05bbc4",
    "email_adressen_im_textlayer": []
   },
   "craddockroofing.com": {
-   "quelle": "<home>/apex/live_check_20260921/craddockroofing_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/craddockroofing_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 66238,
+   "bytes": 66237,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -180,15 +358,47 @@
     "problems": [],
     "seiten": 2,
     "textlayer_zeichen": 3662,
-    "bytes": 66238
+    "bytes": 66237
    },
-   "sha256": "41b5485fa36fe3f0f0a7d02f4e70b3a3950ecc317abb2f03a8a360fa2fa35955",
+   "sha256": "a9ee656eb397ed886f5db1ab774ff2f2d65118efea5a021c4f2def1c1de52c4b",
+   "email_adressen_im_textlayer": []
+  },
+  "denverroofingworks.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/denverroofingworks_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 86425,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 4,
+    "textlayer_zeichen": 11120,
+    "bytes": 86425
+   },
+   "sha256": "531fd0737052a01445d64666a07a0f9c6e54ae5dc2e96913f896907777739917",
+   "email_adressen_im_textlayer": []
+  },
+  "houstoncommercialroofingconstruction.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/houstoncommercialroofingconstruction_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 74374,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 3,
+    "textlayer_zeichen": 6228,
+    "bytes": 74374
+   },
+   "sha256": "52e4451ecb6b02069c00ba6e5204564c5fd1b94cdd12793f0608f49eac25a2ac",
    "email_adressen_im_textlayer": []
   },
   "houstonroofingexperts.com": {
-   "quelle": "<home>/apex/live_check_20260921/houstonroofingexperts_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/houstonroofingexperts_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 69951,
+   "bytes": 69949,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -196,9 +406,57 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 5172,
-    "bytes": 69951
+    "bytes": 69949
    },
-   "sha256": "e95de1df26668a7b1898cd784573d48416de697050bd0fd0ce66d28c853030ae",
+   "sha256": "af4bf6d52a531481a8fde4cc15a88db3cbf726885ae846144cc906ff30d1fcae",
+   "email_adressen_im_textlayer": []
+  },
+  "kpostcompany.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/kpostcompany_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 66893,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 2,
+    "textlayer_zeichen": 4347,
+    "bytes": 66893
+   },
+   "sha256": "4a18bb45942af95510e73e1f922ed38a9f1dc72ca5fdada7170ad8c4f9c79691",
+   "email_adressen_im_textlayer": []
+  },
+  "lonsmith.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/lonsmith_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 78134,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 3,
+    "textlayer_zeichen": 7305,
+    "bytes": 78134
+   },
+   "sha256": "073ea7a22340fda67c3f65b47fb9071643ae2d5ec7d941862ac5311aa711b4b2",
+   "email_adressen_im_textlayer": []
+  },
+  "monarch-roofing.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/monarch-roofing_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 84686,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 4,
+    "textlayer_zeichen": 10242,
+    "bytes": 84686
+   },
+   "sha256": "1a44b6d37d439455fcbf27303f26081e7fb66525c5dd4d0fe2dbdef31c5c492e",
    "email_adressen_im_textlayer": []
   },
   "mysunliferoofing.com": {
@@ -207,10 +465,26 @@
    "sha256": "87f5e3b1d8d5b1b3de714f0e646c2d9ca981b15030d221e0a9d43705374b0cea",
    "email_adressen_im_textlayer": []
   },
-  "ramconroofing.com": {
-   "quelle": "<home>/apex/live_check_20260921/ramconroofing_com_audit.json",
+  "phoenixroofingandrepair.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/phoenixroofingandrepair_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 71693,
+   "bytes": 73428,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 3,
+    "textlayer_zeichen": 7500,
+    "bytes": 73428
+   },
+   "sha256": "85b0f973935488237983bb29a0e42baa8b3944576aa698d09c8247ef43eba516",
+   "email_adressen_im_textlayer": []
+  },
+  "ramconroofing.com": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/ramconroofing_com_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 71694,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -218,15 +492,15 @@
     "problems": [],
     "seiten": 3,
     "textlayer_zeichen": 5488,
-    "bytes": 71693
+    "bytes": 71694
    },
-   "sha256": "df480b6833ea3ef72f99f096eb9ec8670b52374f8f79cf7decec6340573eda59",
+   "sha256": "f834b67b4689d303cb1580717e501f577d014cc29ed4b2916e0378c4c4798c40",
    "email_adressen_im_textlayer": []
   },
   "rencoroofing.com": {
-   "quelle": "<home>/apex/live_check_20260921/rencoroofing_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/rencoroofing_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 79147,
+   "bytes": 79146,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -234,15 +508,31 @@
     "problems": [],
     "seiten": 4,
     "textlayer_zeichen": 8239,
-    "bytes": 79147
+    "bytes": 79146
    },
-   "sha256": "4190168c1ca6f2fe4e78784263023bdd4b8f5165e7d89207e132021eb026f8bc",
+   "sha256": "1685f2d180e53eed042f17a3893b0375eb1d2226ab6cd1c22a1af70c3444ffbd",
+   "email_adressen_im_textlayer": []
+  },
+  "robinsonroofing.site": {
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/robinsonroofing_site_audit.json",
+   "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
+   "bytes": 71638,
+   "pdf_qa": {
+    "ok": true,
+    "variant": "a-2b",
+    "gts_pdfa1": true,
+    "problems": [],
+    "seiten": 3,
+    "textlayer_zeichen": 4986,
+    "bytes": 71638
+   },
+   "sha256": "1ad3cbc44682be76f9cd7028ed667572172d44054d910224e13b729c5c4f72de",
    "email_adressen_im_textlayer": []
   },
   "waltonresidentialservices.com": {
-   "quelle": "<home>/apex/live_check_20260921/waltonresidentialservices_com_audit.json",
+   "quelle": "<home>/apex/ab_test_20260925/json_merged/waltonresidentialservices_com_audit.json",
    "weg": "aus Mess-JSON gerendert (keine Neu-Messung)",
-   "bytes": 77886,
+   "bytes": 77885,
    "pdf_qa": {
     "ok": true,
     "variant": "a-2b",
@@ -250,9 +540,9 @@
     "problems": [],
     "seiten": 4,
     "textlayer_zeichen": 8798,
-    "bytes": 77886
+    "bytes": 77885
    },
-   "sha256": "3270cb4ca40796ada1f41c1fa448e0ff18756ef3ad87af836b7d976664f94d1e",
+   "sha256": "d4da16dc13e94db73f3b334cdbb0da317cfbfd21458aa23d003d617807efd010",
    "email_adressen_im_textlayer": []
   }
  },
@@ -264,20 +554,40 @@
   "advocate-construction.com/index.html",
   "apcroofing.com/apcroofing.com_website_audit.pdf",
   "apcroofing.com/index.html",
+  "btolroofing.com/btolroofing.com_website_audit.pdf",
+  "btolroofing.com/index.html",
   "build_report.json",
+  "castleroofing.us/castleroofing.us_website_audit.pdf",
+  "castleroofing.us/index.html",
+  "coloradosuperiorroofing.com/coloradosuperiorroofing.com_website_audit.pdf",
+  "coloradosuperiorroofing.com/index.html",
   "coxres.com/coxres.com_website_audit.pdf",
   "coxres.com/index.html",
   "craddockroofing.com/craddockroofing.com_website_audit.pdf",
   "craddockroofing.com/index.html",
+  "denverroofingworks.com/denverroofingworks.com_website_audit.pdf",
+  "denverroofingworks.com/index.html",
+  "houstoncommercialroofingconstruction.com/houstoncommercialroofingconstruction.com_website_audit.pdf",
+  "houstoncommercialroofingconstruction.com/index.html",
   "houstonroofingexperts.com/houstonroofingexperts.com_website_audit.pdf",
   "houstonroofingexperts.com/index.html",
   "index.html",
+  "kpostcompany.com/index.html",
+  "kpostcompany.com/kpostcompany.com_website_audit.pdf",
+  "lonsmith.com/index.html",
+  "lonsmith.com/lonsmith.com_website_audit.pdf",
+  "monarch-roofing.com/index.html",
+  "monarch-roofing.com/monarch-roofing.com_website_audit.pdf",
   "mysunliferoofing.com/index.html",
   "mysunliferoofing.com/mysunliferoofing.com_website_audit.pdf",
+  "phoenixroofingandrepair.com/index.html",
+  "phoenixroofingandrepair.com/phoenixroofingandrepair.com_website_audit.pdf",
   "ramconroofing.com/index.html",
   "ramconroofing.com/ramconroofing.com_website_audit.pdf",
   "rencoroofing.com/index.html",
   "rencoroofing.com/rencoroofing.com_website_audit.pdf",
+  "robinsonroofing.site/index.html",
+  "robinsonroofing.site/robinsonroofing.site_website_audit.pdf",
   "services.html",
   "waltonresidentialservices.com/index.html",
   "waltonresidentialservices.com/waltonresidentialservices.com_website_audit.pdf"
