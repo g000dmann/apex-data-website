@@ -169,14 +169,17 @@ th { color:#6b7280; font-size:.72rem; text-transform:uppercase; letter-spacing:.
 
   <h3>What we do every month</h3>
   <ul>
-    <li>Uptime checks at short intervals, with an email alert to you when the site is down</li>
-    <li>SSL certificate expiry watch (we warn you before a certificate lapses)</li>
-    <li>Monthly health report by email: uptime, SSL and anything unusual we found</li>
-    <li>Backup and security checks <b>where your setup allows it</b>: if you give us a read path to
-        your backup location we verify that a current backup exists and opens; a security scan is
-        run against your public site. Some hosting setups cannot be checked this way - if yours is
-        one of them we tell you at the start exactly which checks you will get, instead of
-        pretending.</li>
+    <li>Uptime checks on a daily run, with an alert raised on our side the moment a check fails -
+        you hear it from us, not from a customer</li>
+    <li>SSL certificate expiry watch (we flag a certificate as soon as fewer than three weeks are
+        left on it)</li>
+    <li>A monthly health report (uptime, SSL, backup status and every failed check), written and
+        sent by us</li>
+    <li>Backup check <b>where your setup allows it</b>: if you give us a read path or URL to your
+        backup location, we verify on every run that a recent backup file is actually there
+        (existence, size and age). Most hosting setups cannot be checked this way from the outside
+        - if yours is one of them we say so at the start, and that check is reported to you as
+        "not checkable" instead of a fake tick.</li>
   </ul>
 
   <h3>How this runs</h3>
@@ -221,9 +224,11 @@ th { color:#6b7280; font-size:.72rem; text-transform:uppercase; letter-spacing:.
     <li>Company name and city</li>
     <li>Website domain</li>
     <li>Google rating and review count (a buying signal: low reviews = fixable, high reviews = busy)</li>
-    <li>Known website defects we measured (speed, missing meta, mobile issues, schema)</li>
-    <li>One working business email address per record (we check the domain and our own bounce
-        history before shipping; if it bounces, it is replaced - see below)</li>
+    <li>The website defects we measured (missing meta, structured data, page size) live in our
+        separate website audit report - they are not a column in your lead file</li>
+    <li>The contact email we hold, with its per-record verification status (syntax- and
+        DNS/MX-checked, screened against our suppression and bounce lists before shipping; if it
+        still hard-bounces, it is replaced - see below)</li>
   </ul>
 
   <h3>How delivery works</h3>
